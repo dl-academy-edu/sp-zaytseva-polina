@@ -1,4 +1,4 @@
-#Личный проект "Design Life Kids"
+# Личный проект "Design Life Kids"
 
-*Студентка [Зайцева Полина](https://t.me/ZaitsevaPolina)
-*Наставник [Печинов Сергей](https://t.me/SergeyPechinov)
+* Студентка [Зайцева Полина](https://t.me/kreker_ribka)
+* Наставник [Печинов Сергей](https://t.me/SergeyPechinov)
