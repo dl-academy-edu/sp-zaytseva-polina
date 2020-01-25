@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DLK</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="../../index.html">
+      <img class="header-logo" src="../../images/logo.svg" alt="logo">
+    </a>
+    <nav class="site-nav">
+      <ul>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="pages/catalog/index.html">Catalog</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <a class="search-link" href="#">
+      <img class="search-image" src="../../images/search.svg" alt="search"></a>
+    <a href="#">Contact Us</a>
+  </header>
+  <main>
+    <h1 class="contact-us-title">Contact Us</h1>
+    <a href="#">Home</a>
+    <button class="category-link"><img class="category-img" src="../../images/vector3.svg"></button>
+    <a href="#">Catalog</a>
+    <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+      <p>
+        <label for="input-name">Name</label>
+        <input name="name" id="input-name" type="text">
+      </p>
+      <p>
+        <label for="input-phone">Phone</label>
+        <input name="phone" id="input-phone" type="tel">
+      </p>
+      <p>
+        <label for="input-email">Email</label>
+        <input name="email" id="input-email" type="email">
+      </p>
+      <p>
+        <label for="input-message">Message</label>
+        <textarea name="message" id="input-message" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <input id="input-accept" name="accept" type="checkbox">
+        <label for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.
+      Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+    <h2 class="contact-us-post">An expert is waiting to help you!</h2>
+  </main>
+  </body>
+  </html>
