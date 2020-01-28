@@ -33,12 +33,14 @@
         <a href="#">Toys</a>
       </div>
     <form class="toys-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-          <p class="cost-title">Cost</p>
+        <fieldset>
+          <legend>Cost</legend>
           <p>
           <label for="input-cost">0</label>
           <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
           <label for="input-cost">500</label>
           </p>
+        </fieldset>
       <fieldset>
         <legend>Color</legend>
           <p>
