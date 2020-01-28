@@ -22,6 +22,7 @@
         <img class="search-image" src="images/search.svg" alt="search"></a>
       <a href="pages/contact-us/index.html">Contact Us</a>
     </header>
+
     <main>
       <div class="slider">
         <h2 class="slider-title">THE OOH NOO <br> COLLECTION</h2>
@@ -33,16 +34,18 @@
         <!--перемеиновать этот класс-->
         <h2 class="category-title">Category Products</h2>
         <ul class="category-list">
-          <li class="category-item"><img class="category-img" src="images/kids.png" alt="APPAREL KIDS"></li>
-          <li class="category-item"><img class="category-img" src="images/shop.png" alt="HOLIDAY SHOP"></li>
-          <li class="category-item"><img class="category-img" src="images/toys.png" alt="TOYS"></li>
-          <li class="category-item"><img class="category-img" src="images/access.png" alt="ACCESSORIES"></li>
+          <li class="category-item"><a href="index.html"><img class="category-img" src="images/kids.png" alt="APPAREL KIDS"></a></li>
+          <li class="category-item"><a href="index.html"><img class="category-img" src="images/shop.png" alt="HOLIDAY SHOP"></a></li>
+          <li class="category-item"><a href="index.html"><img class="category-img" src="images/toys.png" alt="TOYS"></a></li>
+          <li class="category-item"><a href="index.html"><img class="category-img" src="images/access.png" alt="ACCESSORIES"></a></li>
         </ul>
-        <button class="category-link"><img class="category-img" src="images/Vector1.svg"></button>
-        <button class="category-link"><img class="category-img" src="images/Vector2.svg"></button>
+        <button class="category-link"><img class="category-img" src="images/Vector1.svg" alt="vector1"></button>
+        <button class="category-link"><img class="category-img" src="images/Vector2.svg" alt="vector2"></button>
         <p class="category-text">Modern finds for the modern home. Curated goods by unique designers <br> around the world
           from fashion to furniture for kids and adults.</p>
       </div>
+    </main>
+
       <section class="delivery">
         <h2 class="delivery-title">Delivery</h2>
         <ul>
@@ -77,14 +80,15 @@
         <article class="contacts">
           <h2 class="contacts">Contacts</h2>
           <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
-            shocked that four years have flown by. It's simply magical.<p>
+            shocked that four years have flown by. It's simply magical.</p>
         </article>
+      </div>
         <article class="map">
           <h2 class="hidden">map</h2>
           <img class="map-image" src="images/map.png" alt="map">
           <!-- на этом месте могла быть карта -->
-      </div>
-    </main>
+        </article>
+
     <footer class="footer">
       <ul class="navigation-list">
         <li class="navigation-item"><a href="#">Navigation</a></li>
@@ -103,15 +107,17 @@
         <li class="navigation-item"><a href="#">Search</a></li>
       </ul>
       <span class="connect">Connect</span>
-      <form name="user" action="index.html" method="POST"><label for="user-login"></label><input type="email"
-          autocomplete="on" placeholder="Email"><input type="submit"></form>
+      <form class="connect-form" name="user" action="index.html" method="POST">
+        <input type="email" autocomplete="on" placeholder="Email"><input type="submit">
+      </form>
       <ul class="social-list">
         <li class="social-item"><a href="#">Facebook</a></li>
         <li class="social-item"><a href="#">Twitter</a></li>
-        <li class="social-item"><a href="#">\Pinterest</a></li>
+        <li class="social-item"><a href="#">Pinterest</a></li>
         <li class="social-item"><a href="#">Instagram</a></li>
       </ul>
     </footer>
+
   <div class="modal-form">
     <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <p>
@@ -130,6 +136,7 @@
       <label class="form-input" for="input-message">Message</label>
       <input class="form-input" name="message" id="input-message">
       </p>
+      <p>
       <input class="form-input" id="input-accept" name="accept" type="checkbox">
       <label class="form-input" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
       </p>

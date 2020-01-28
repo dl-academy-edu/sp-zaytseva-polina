@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Toy for kids</title>
+</head>
+
+<body>
+    <header class="header">
+      <a href="../../index.html">
+        <img class="header-logo" src="../../../../images/logo.svg" alt="Logo">
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="pages/catalog/index.html">Catalog</a></li>
+          <li class="nav-item"><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <a class="search-link" href="#">
+        <img class="search-image" src="../../../../images/search.svg" alt="search"></a>
+      <a href="../contact-us/index.html">Contact Us</a>
+  </header>
+
+    <main>
+      <div class="toys">
+        <h1 class="toys-title">Toy for kids</h1>
+        <a href="#">Home</a>
+        <img class="toys-img" src="../../../../images/vector3.svg" alt="vector3">
+        <a href="#">Catalog</a>
+        <img class="toys-img" src="../../../../images/vector3.svg" alt="vector3">
+        <a href="#">Toys</a>
+      </div>
+    <form class="toys-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <p class="cost-title">Cost</p>
+           <p>
+           <label for="input-cost">10</label>
+           <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
+           <label for="input-cost">500</label>
+          </p>
+      <fieldset>
+        <legend>Color</legend>
+          <p>
+            <input id="input-black" name="black" type="checkbox" value="black">
+            <label for="input-black">Black</label>
+          </p>
+          <p>
+            <input id="input-blue" name="blue" type="checkbox" value="blue">
+            <label for="input-blue">Blue</label>
+          </p>
+          <p>
+            <input id="input-green" name="green" type="checkbox" value="green">
+            <label for="input-green">Green</label>
+          </p>
+          <p>
+            <input id="input-white" name="white" type="checkbox" value="white">
+            <label for="input-white">White</label>
+          </p>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery</legend>
+          <p>
+            <input id="input-free" name="free" type="radio" value="free shipping">
+            <label for="input-free">Free shipping</label>
+          </p>
+          <p>
+            <input id="input-fast" name="fast" type="radio" value="fast shipping">
+            <label for="input-fast">Fast shipping</label>
+          </p>
+      </fieldset>
+      <fieldset>
+        <legend>Amount</legend>
+        <button type="submit">0-5</button>
+        <button type="submit">10-20</button>  
+        <button type="submit">20-50</button>
+      </fieldset>
+      <button type="submit">apply</button>
+    </form>
+    </main>
+
+        <div class="toys-shop">
+          <ul class="shop-list">
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/sharky.png" alt="sharky"></a></li>
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/brass.png" alt="brass"></a></li>
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/cibo.png" alt="cibo"></a></li>
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/gatcha.png" alt="gatcha"></a></li>
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/christmas.png" alt="christmas"></a></li>
+            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/spinning.png" alt="spinning"></a></li>
+          </ul>
+        </div>
+      <div>
+        <div class="toys-list">
+          <ul>
+            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/1.svg" alt="1"></a></li>
+            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/2.svg" alt="2"></a></li>
+            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/3.svg" alt="3"></a></li> 
+            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/4.svg" alt="4"></a></li> 
+          </ul>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Navigation</a></li>
+          <li class="navigation-item"><a href="#">Blog</a></li>
+          <li class="navigation-item"><a href="#">Design Services</a></li>
+          <li class="navigation-item"><a href="#">Featured On</a></li>
+          <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="navigation-item"><a href="#">Shop By Designer</a></li>
+        </ul>
+        <ul class="customer-information-list">
+          <li class="nvigation-item"><a href="#">Contact Us</a></li>
+          <li class="navigation-item"><a href="#">Sale Exclusions</a></li>
+          <li class="navigation-item"><a href="#">Shipping & Returns</a></li>
+          <li class="navigation-item"><a href="#">Terms & Conditions</a></li>
+          <li class="navigation-item"><a href="#">Privacy Policy</a></li>
+          <li class="navigation-item"><a href="#">Search</a></li>
+        </ul>
+        <span class="connect">Connect</span>
+        <form class="conect" action="index.html" method="POST">
+          <p>
+            <label for="input-email"></label>
+            <input class="form-input" name="email" id="input-email" type="email" placeholder="Email">
+            <button type="submit">Join</button>
+          </p>
+        </form>
+        <ul class="social-list">
+          <li class="social-item"><a href="#">Facebook</a></li>
+          <li class="social-item"><a href="#">Twitter</a></li>
+          <li class="social-item"><a href="#">\Pinterest</a></li>
+          <li class="social-item"><a href="#">Instagram</a></li>
+        </ul>
+      </footer>
+</body>
+</html>
