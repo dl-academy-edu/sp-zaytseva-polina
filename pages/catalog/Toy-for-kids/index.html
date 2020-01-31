@@ -105,35 +105,41 @@
       </div>
 
       <footer class="footer">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">Navigation</a></li>
-          <li class="navigation-item"><a href="#">Blog</a></li>
-          <li class="navigation-item"><a href="#">Design Services</a></li>
-          <li class="navigation-item"><a href="#">Featured On</a></li>
-          <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-          <li class="navigation-item"><a href="#">Shop By Designer</a></li>
-        </ul>
-        <ul class="customer-information-list">
-          <li class="nvigation-item"><a href="#">Contact Us</a></li>
-          <li class="navigation-item"><a href="#">Sale Exclusions</a></li>
-          <li class="navigation-item"><a href="#">Shipping & Returns</a></li>
-          <li class="navigation-item"><a href="#">Terms & Conditions</a></li>
-          <li class="navigation-item"><a href="#">Privacy Policy</a></li>
-          <li class="navigation-item"><a href="#">Search</a></li>
-        </ul>
-        <span class="connect">Connect</span>
-        <form class="conect" action="index.html" method="POST">
-          <p>
-            <label for="input-email"></label>
-            <input class="form-input" name="email" id="input-email" type="email" placeholder="Email">
-            <button type="submit">Join</button>
-          </p>
+        <nav class="footer-navigation">
+          <ul class="navigation-list">
+            <p class="footer-title">Navigation</p>
+            <li class="navigation-item"><hr><a href="#">About Us</a></hr></li>
+            <li class="navigation-item"><a href="#">Blog</a></li>
+            <li class="navigation-item"><a href="#">Design Services</a></li>
+            <li class="navigation-item"><a href="#">Featured On</a></li>
+            <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
+            <li class="navigation-item"><a href="#">Shop By Designer</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-navigation">
+          <ul class="information-list">
+            <p class="footer-title">Customer Information</p>
+            <li class="information-item"><hr><a href="#">Contact Us</a></hr></li>
+            <li class="information-item"><a href="#">Sale Exclusions</a></li>
+            <li class="information-item"><a href="#">Shipping & Returns</a></li>
+            <li class="information-item"><a href="#">Terms & Conditions</a></li>
+            <li class="information-item"><a href="#">Privacy Policy</a></li>
+            <li class="information-item"><a href="#">Search</a></li>
+          </ul>
+        </nav>
+        <span class="footer-title">Connect</span>
+        <hr>
+        <form class="connect-form" name="user" action="index.html" method="POST">
+          <label for="input-email"></label>
+          <input type="email" autocomplete="on" placeholder="Email">
+          <button type="submit">Join</button>
         </form>
+        </hr>
         <ul class="social-list">
-          <li class="social-item"><a href="#">Facebook</a></li>
-          <li class="social-item"><a href="#">Twitter</a></li>
-          <li class="social-item"><a href="#">\Pinterest</a></li>
-          <li class="social-item"><a href="#">Instagram</a></li>
+          <li class="social-item hidden"><a href="#">Facebook</a></li>
+          <li class="social-item hidden"><a href="#">Twitter</a></li>
+          <li class="social-item hidden"><a href="#">Pinterest</a></li>
+          <li class="social-item hidden"><a href="#">Instagram</a></li>
         </ul>
       </footer>
 </body>

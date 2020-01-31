@@ -60,8 +60,8 @@
           <a class="slide-link button button_black" href="#">EXPLORE NOW</a>
         </div>
       </div>
-      <div class="discaunt">
-        <p class="discaunt-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+      <div class="discount">
+        <p class="discount-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
       </div>
     
       <div class="category">
@@ -76,16 +76,14 @@
         <button class="category-link"><img class="category-img" src="images/Vector2.svg" alt="vector2"></button>
         <p class="category-text">Modern finds for the modern home. Curated goods by unique designers <br> around the world
           from fashion to furniture for kids and adults.</p>
-
       </div>
-    </main>
 
       <section class="delivery">
         <h2 class="delivery-title">Delivery</h2>
         <ul>
-          <li class="delivery-item"><a href="#">Delivery</a></li>
-          <li class="delivery-item"><a href="#">Guarantee</a></li>
-          <li class="delivery-item"><a href="#">Credit</a></li>
+          <li class="delivery-item"><button class="delivery-button">Delivery</button></li>
+          <li class="delivery-item"><button class="delivery-button">Guarantee</button></li>
+          <li class="delivery-item"><button class="delivery-button">Credit</button></li>
         </ul>
         <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days
           that i am completely shocked that four years have flown by. It's simply magical.
@@ -117,27 +115,37 @@
           <img class="map-image" src="images/map.png" alt="map">
           <!-- на этом месте могла быть карта -->
         </section>
+    </main>
         
     <footer class="footer">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a href="#">Navigation</a></li>
-        <li class="navigation-item"><a href="#">Blog</a></li>
-        <li class="navigation-item"><a href="#">Design Services</a></li>
-        <li class="navigation-item"><a href="#">Featured On</a></li>
-        <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-        <li class="navigation-item"><a href="#">Shop By Designer</a></li>
-      </ul>
-      <ul class="customer-information-list">
-        <li class="nvigation-item"><a href="#">Contact Us</a></li>
-        <li class="navigation-item"><a href="#">Sale Exclusions</a></li>
-        <li class="navigation-item"><a href="#">Shipping & Returns</a></li>
-        <li class="navigation-item"><a href="#">Terms & Conditions</a></li>
-        <li class="navigation-item"><a href="#">Privacy Policy</a></li>
-        <li class="navigation-item"><a href="#">Search</a></li>
-      </ul>
-      <span class="connect">Connect</span>
+      <nav class="footer-navigation">
+        <p class="footer-title">Navigation</p>
+        <ul class="navigation-list">
+          <li class="navigation-item"><hr><a href="#">About Us</a></li>
+          <li class="navigation-item"><a href="#">Blog</a></li>
+          <li class="navigation-item"><a href="#">Design Services</a></li>
+          <li class="navigation-item"><a href="#">Featured On</a></li>
+          <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="navigation-item"><a href="#">Shop By Designer</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-navigation">
+        <p class="footer-title">Customer Information</p>
+        <ul class="information-list">
+          <li class="information-item"><hr><a href="#">Contact Us</a></li>
+          <li class="information-item"><a href="#">Sale Exclusions</a></li>
+          <li class="information-item"><a href="#">Shipping & Returns</a></li>
+          <li class="information-item"><a href="#">Terms & Conditions</a></li>
+          <li class="information-item"><a href="#">Privacy Policy</a></li>
+          <li class="information-item"><a href="#">Search</a></li>
+        </ul>
+      </nav>
+      <span class="footer-title">Connect</span>
+      <hr>
       <form class="connect-form" name="user" action="index.html" method="POST">
-        <input type="email" autocomplete="on" placeholder="Email"><input type="submit">
+        <label for="input-email"></label>
+        <input type="email" autocomplete="on" placeholder="Email">
+        <button type="submit">Join</button>
       </form>
       <ul class="social-list">
         <li class="social-item hidden"><a href="#">Facebook</a></li>
