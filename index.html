@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>DLK</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="/common.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   </head>
 
@@ -15,7 +15,7 @@
         <img class="header-logo" src="images/logo.svg" alt="logo">
       </a>
       <nav class="site-nav">
-        <ul class="hidden-marker">
+        <ul class="list-hidden-marker">
           <li class="nav-item"><a href="#">Blog</a></li>
           <li class="nav-item"><a href="pages/catalog/index.html">Catalog</a></li>
           <li class="nav-item"><a href="#">About Us</a></li>
@@ -27,6 +27,7 @@
     </header>
 
     <main>
+      <div class="mein">
       <div class="slider-buttons">
         <button class="slider-button"><img class="slider-img" src="/images/line.svg" alt="line1"></button><br>
         <button class="slider-button"><img class="slider-img" src="/images/line2.svg" alt="line2"></button><br>
@@ -60,13 +61,15 @@
           <a class="slide-link button button_black" href="#">EXPLORE NOW</a>
         </div>
       </div>
-      <div class="discount">
-        <p class="discount-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-      </div>
+      <div class="mein-discount">
+        <div class="discount">
+          <p class="discount-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </div>
+    </div>
     
       <div class="category">
         <h2 class="category-title">Category Products</h2>
-        <ul class="category-list">
+        <ul class="category-list list-hidden-marker">
           <li class="category-item"><a href="index.html"><img class="category-img" src="images/kids.png" alt="APPAREL KIDS"></a></li>
           <li class="category-item"><a href="index.html"><img class="category-img" src="images/shop.png" alt="HOLIDAY SHOP"></a></li>
           <li class="category-item"><a href="index.html"><img class="category-img" src="images/toys.png" alt="TOYS"></a></li>
@@ -77,10 +80,10 @@
         <p class="category-text">Modern finds for the modern home. Curated goods by unique designers <br> around the world
           from fashion to furniture for kids and adults.</p>
       </div>
-      
+
       <section class="delivery">
         <h2 class="delivery-title">Delivery</h2>
-        <ul>
+        <ul class="list-hidden-marker">
           <li class="delivery-item"><button class="delivery-button">Delivery</button></li>
           <li class="delivery-item"><button class="delivery-button">Guarantee</button></li>
           <li class="delivery-item"><button class="delivery-button">Credit</button></li>
@@ -94,7 +97,7 @@
       </section>
       <section class="partners">
         <h2 class="hidden">Partners</h2>
-        <ul class="partners-list">
+        <ul class="partners-list list-hidden-marker">
           <li class="partner-item "><a class="partner-link hidden" href="#"></a></li>
           <li class="partner-item "><a class="partner-link hidden" href="#"></a></li>
           <li class="partner-item "><a class="partner-link hidden" href="#"></a></li>
@@ -115,12 +118,13 @@
           <img class="map-image" src="images/map.png" alt="map">
           <!-- на этом месте могла быть карта -->
         </section>
+      </div>
     </main>
         
     <footer class="footer">
       <nav class="footer-navigation">
         <p class="footer-title">Navigation</p>
-        <ul class="navigation-list">
+        <ul class="navigation-list list-hidden-marker">
           <li class="navigation-item"><hr><a href="#">About Us</a></li>
           <li class="navigation-item"><a href="#">Blog</a></li>
           <li class="navigation-item"><a href="#">Design Services</a></li>
@@ -130,7 +134,7 @@
         </ul>
         <hr>
         <p class="footer-title">Company Rating</p>
-        <ul class="footer-userpic">
+        <ul class="footer-userpic list-hidden-marker">
           <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
           <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
           <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
@@ -140,7 +144,7 @@
       </nav>
       <nav class="footer-navigation">
         <p class="footer-title">Customer Information</p>
-        <ul class="information-list">
+        <ul class="information-list list-hidden-marker">
           <li class="information-item"><hr><a href="#">Contact Us</a></li>
           <li class="information-item"><a href="#">Sale Exclusions</a></li>
           <li class="information-item"><a href="#">Shipping & Returns</a></li>
@@ -159,7 +163,7 @@
           <input type="email" autocomplete="on" placeholder="Email">
           <button type="submit">Join</button>
         </form>
-        <ul class="social-list">
+        <ul class="social-list list-hidden-marker">
           <li class="social-item"><a href="#">Facebook</a></li>
           <li class="social-item"><a href="#">Twitter</a></li>
           <li class="social-item"><a href="#">Pinterest</a></li>
@@ -174,26 +178,26 @@
   <div class="modal-form">
     <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <p>
-      <label class="form-input" for="input-name">Name</label>
+      <label class="form-label" for="input-name">Name</label>
       <input class="form-input" name="name" id="input-name" type="text">
       </p>
       <p>
-      <label class="form-input" for="input-phone">Phone</label>
+      <label class="form-label" for="input-phone">Phone</label>
       <input class="form-input" name="phone" id="input-phone" type="tel">
       </p>
       <p>
-      <label class="form-input" for="input-email">Email</label>
+      <label class="form-label" for="input-email">Email</label>
       <input class="form-input" name="email" id="input-email" type="email">
       </p>
       <p>
-      <label class="form-input" for="input-message">Message</label>
+      <label class="form-label" for="input-message">Message</label>
       <input class="form-input" name="message" id="input-message">
       </p>
       <p>
-      <input class="form-input" id="input-accept" name="accept" type="checkbox">
+      <input class="form-label" id="input-accept" name="accept" type="checkbox">
       <label class="form-input" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
       </p>
-      <button class="form-input" type="submit">Submit</button>
+      <button class="button" type="submit">Submit</button>
     </form>
   </div>
   </body>
