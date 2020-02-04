@@ -1,0 +1,144 @@
+/* slider */
+
+.slider {
+
+    
+}
+
+.slide-title {
+
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+
+}
+
+.slide-text {
+
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.slide-link {
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.slider-button {
+
+    background: rgba(30, 6, 6, 0.6);
+}
+
+.discount-text {
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #C29974;
+}
+
+/* category */
+
+.category-title {
+
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+    text-align: left;
+}
+
+.category-list {
+
+}
+
+.category-item {
+
+}
+
+.category-link {
+
+}
+
+.category-text {
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+/* delivery */
+
+.delivery-title {
+
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+}
+
+.delivery-button {
+
+}
+
+.delivery-text {
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+/* partners */
+
+.partners {
+
+}
+
+/* design-life-kids */
+
+.design-life-kids {
+
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+}
+
+.about-us {
+
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+}
+
+.about-text {
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+/* contacts */
+
+.contacts {
+
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+}
+
+.contact-text {
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.map-image {
+
+}

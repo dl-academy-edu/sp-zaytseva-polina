@@ -1,11 +1,7 @@
 body { 
   
-  font-family: “Helvetica”, sans-serif; 
-} 
-
-body { 
-
-  margin: 0; 
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 } 
 
 a { 
@@ -24,3 +20,76 @@ html {
 
   box-sizing: inherit; 
 }
+
+.list-hidden-marker {
+
+  list-style-type: none;
+}
+
+.button {
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+/* header */
+
+.nav-item {
+
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.search-image {
+
+}
+
+.search-text {
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+/* footer */
+
+.footer {
+
+  background: #434343;
+}
+
+.footer-title {
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+}
+
+.navigation-list {
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer-stars {
+
+}
+
+.connect-form {
+
+}
+
+.social-list {
+
+}
+
+.social-item {
+
+}
+
