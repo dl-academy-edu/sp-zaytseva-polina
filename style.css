@@ -1,66 +1,109 @@
 /* slider */
 
-.slider {
+.slide {
 
-    
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.slider-buttons {
+
+  width: 31px;
+  height: 3px;
+  left: 141px;
+  top: 332px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide {
+
+  
 }
 
 .slide-title {
 
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1E0606;
 }
 
 .slide-text {
 
-    font-size: 20px;
-    line-height: 25px;
-    color: #1E0606;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
 }
 
 .slide-link {
 
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-    background: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #000000;
 }
 
-.slider-button {
-
-    background: rgba(30, 6, 6, 0.6);
-}
 
 .discount-text {
 
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #C29974;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #C29974;
+  padding: 22px;
 }
+
 
 /* category */
 
+.category {
+
+}
+
 .category-title {
 
-    font-size: 38px;
-    line-height: 46px;
-    color: #1E0606;
-    text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
 }
 
 .category-list {
 
+  display: flex;
+  justify-content: space-between;
 }
 
-.category-item {
+.category-img {
+
+}
+
+.category-subtitle {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.category-box {
 
 }
 
@@ -70,76 +113,157 @@
 
 .category-text {
 
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
 }
 
 /* delivery */
 
-.delivery-title {
+.delivery {
 
-    font-size: 38px;
-    line-height: 46px;
-    color: #1E0606;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
 }
 
-.delivery-button {
+.delivery-title {
 
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  margin-left: 120px;
+}
+
+.delivery-buttons {
+
+  justify-content: space-between;
+  width: 1080px;
+  height: 559px;
+}
+
+.delivery-button-delivery {
+
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+  background: rgba(112, 187, 220, 0.2);
+  margin-left: 120px;
+}
+
+.delivery-button-guarantee {
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+  margin: 20px;
+  margin-left: 120px;
+}
+
+.delivery-button-credit {
+
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+  margin: 20px;
+  margin-left: 120px;
 }
 
 .delivery-text {
 
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+  font-family: 'Open Sans', sans-serif;
+  width: 480px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-left: 120px;
+}
+
+.delivery-link {
+
+  margin-left: 120px;
 }
 
 /* partners */
 
-.partners {
+.hidden {
 
+  display: none;
+}
+
+.partners-list {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* design-life-kids */
 
-.design-life-kids {
-
-    font-size: 38px;
-    line-height: 46px;
-    color: #1E0606;
-}
-
 .about-us {
 
-    font-size: 26px;
-    line-height: 32px;
-    color: #1E0606;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-life-kids {
+
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+}
+
+.about-us-title {
+
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
 }
 
 .about-text {
 
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
 }
 
 /* contacts */
 
 .contacts {
 
-    font-size: 38px;
-    line-height: 46px;
-    color: #1E0606;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
 }
 
 .contact-text {
 
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
 }
 
 .map-image {
 
+}
+
+
+/* modal form */
+
+.form-label {
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #1E0606;
+}
+
+.modal-form {
+
+  background: #E5EAF8;
 }

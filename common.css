@@ -1,3 +1,7 @@
+* {
+  border: none;
+}
+
 body { 
   
   font-family: 'Open Sans', sans-serif;
@@ -33,7 +37,8 @@ a {
 /* header */
 
 .header {
- padding: 50px;
+
+  margin-bottom: 40px;
 }
 
 .container {
@@ -65,7 +70,6 @@ a {
 .header-menu {
 
   display: flex;
-
 }
 
 .header-menu-item {
@@ -75,6 +79,12 @@ a {
   line-height: 19px;
   color: #1E0606;
   box-sizing: content-box;
+}
+
+.header-menu-link {
+
+  color: #1E0606;
+  font-family: ;
 }
 
 .search-list {
@@ -115,7 +125,7 @@ a {
   color: #AAAAAA;
 }
 
-.navigation-list {
+.information-link {
 
   font-size: 16px;
   line-height: 22px;
