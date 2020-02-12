@@ -138,6 +138,7 @@ a {
 
 .footer-title {
 
+  padding-right: 25px;
   font-size: 16px;
   line-height: 22px;
   color: #AAAAAA;
@@ -164,12 +165,28 @@ a {
 
 .connect-form {
 
+  display: flex;
+  justify-content: space-between;
+}
+
+.connect-email {
+
+  width: 380px;
+  background: #666666;
+}
+
+.button-form {
+
+  width: 81px;
+  height: 40px;
+  background: #000000;
+
 }
 
 .social-list {
   
   display: flex;
-  align-items: center;
+  justify-content: left;
 }
 
 .social-item {
