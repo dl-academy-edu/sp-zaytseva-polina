@@ -123,6 +123,17 @@
   margin: 0;
 }
 
+.category-subtitle:hover {
+
+  color: #FFFFFF;
+}
+
+.category-subtitle:active {
+
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
 .category-box {
 
   display: flex;
@@ -132,6 +143,7 @@
 
 .box-button {
 
+  cursor: pointer;
   margin-right: 6px;
   background: transparent;
   border: 0;
@@ -261,7 +273,6 @@
 
 }
 
-
 /* modal form */
 
 .modal-form {
@@ -273,10 +284,11 @@
 
   width: 680px;
   height: 542px;
-  padding: 50px;
   margin: auto;
+  padding: 50px;
   display: flex;
   flex-direction: column;
+
 }
 
 .form-name {
@@ -304,8 +316,9 @@
   justify-content: space-between;
 }
 
-.button-modal {
+.button-form {
 
+  cursor: pointer;
   font-weight: bold;
   padding: 9px 22px;
   width: 106px;
@@ -314,3 +327,39 @@
   background-color: #C1C1C1;
   margin-top: 20px;
 }
+
+.form-label-checkbox {
+
+  list-style-type: none;
+}
+
+.form-input-text {
+
+  margin-left: 20px;
+}
+
+.form-checkbox::before {
+
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  display: block;
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+}
+
+.form-checkbox:checked:after {
+
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  display: block;
+  box-sizing: border-box;
+  background-image: url(/images/galka.svg);
+
+}
+

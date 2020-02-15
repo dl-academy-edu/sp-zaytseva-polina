@@ -132,6 +132,12 @@ a {
   color: #FFFFFF;
 }
 
+.footer-container {
+
+  width: 33.33%;
+  padding: 0 10px;
+}
+
 .footer-content {
 
   display: flex;
@@ -142,14 +148,6 @@ a {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 49px;
-}
-
-.footer-line {
-
-  border-top: 1px solid #666666;
-  width: 380px;
-  margin-top: 23px;
-  margin-bottom: 28px;
 }
 
 .navigation-list {
@@ -177,8 +175,9 @@ a {
 .footer-stars {
 
   display: flex;
-  justify-content: space-between;
+  
   align-items: center;
+  border-top: 1px solid #666666;
 }
 
 .footer-star-block {
@@ -187,7 +186,8 @@ a {
 }
 
 .button-star {
-  
+
+  cursor: pointer;
   margin-right: 3px;
   outline: none;
   border: 0px;
@@ -205,19 +205,30 @@ a {
   justify-content: space-between;
 }
 
-.connect-email {
+.connect-form:hover {
 
-  width: 380px;
   background: #666666;
 }
 
-.button-form {
+.connect-form:active {
+
+  border: 1px solid #FFFDFD;
+  box-sizing: border-box;
+
+}
+
+.connect-email {
+
+  width: 380px;
+  height: 40px;
+  background: #666666;
+}
+
+.button-connect {
 
   cursor: pointer;
-  width: 81px;
+  width: 106px;
   height: 40px;
-  background: #000000;
-
 }
 
 .social-list {
@@ -239,38 +250,3 @@ a {
   margin-right: 10px;
   color: #A2A2A2;
 }
-
-.form-label-checkbox {
-
-  list-style-type: none;
-}
-
-.form-input-text {
-
-  margin-left: 20px;
-}
-
-.form-checkbox::before {
-
-  content: "";
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  display: block;
-  border: 2px solid #C29974;
-  box-sizing: border-box;
-  border-radius: 3px;
-
-}
-
-.form-checkbox:checked + .form-checkbox::after {
-
-  content: "";
-  position: absolute;
-  box-sizing: border-box;
-  width: 14.23px;
-  height: 14.64px;
-  background-image: url(/images/galka.svg);
-
-}
-
