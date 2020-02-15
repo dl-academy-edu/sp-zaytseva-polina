@@ -25,8 +25,7 @@ a {
 }
 
 .button_black {
-  display: block;
-  width: 161px;
+
   min-height: 40px;
   padding: 9px 22px;
   font-weight: bold;
@@ -34,9 +33,6 @@ a {
   line-height: 22px;
   color: #FFFFFF;
   background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .button_black:hover {
@@ -54,7 +50,7 @@ a {
 
 .header {
 
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 
 .container {
@@ -100,7 +96,6 @@ a {
 .header-menu-link {
 
   color: #1E0606;
-  font-family: ;
 }
 
 .search-list {
@@ -131,16 +126,44 @@ a {
 
 .footer {
 
-  display: flex;
-  justify-content: space-between;
+  padding: 100px 0;
   background: #434343;
+  margin-top: 60px;
+  color: #FFFFFF;
+}
+
+.footer-content {
+
+  display: flex;
 }
 
 .footer-title {
 
-  padding-right: 25px;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 49px;
+}
+
+.footer-line {
+
+  border-top: 1px solid #666666;
+  width: 380px;
+  margin-top: 23px;
+  margin-bottom: 28px;
+}
+
+.navigation-list {
+
+  padding: 0;
+}
+
+.information-list {
+
+  padding: 0;
+}
+
+.gray_text {
+
   color: #AAAAAA;
 }
 
@@ -158,9 +181,22 @@ a {
   align-items: center;
 }
 
-.stars {
+.footer-star-block {
 
-  background: #434343;
+  display: flex;
+}
+
+.button-star {
+  
+  margin-right: 3px;
+  outline: none;
+  border: 0px;
+  background: transparent;
+}
+
+.star-text {
+
+  margin-right: 25px;
 }
 
 .connect-form {
@@ -177,6 +213,7 @@ a {
 
 .button-form {
 
+  cursor: pointer;
   width: 81px;
   height: 40px;
   background: #000000;
@@ -187,6 +224,7 @@ a {
   
   display: flex;
   justify-content: left;
+  padding: 0;
 }
 
 .social-item {
@@ -199,28 +237,40 @@ a {
   background-size: contain;
   border-radius: 15px;
   margin-right: 10px;
-}
-
-.social-item:nth-child(1) {
-  background-image: url(/images/facebook.svg);
-}
-
-.social-item:nth-child(2) {
-  background-image: url(/images/twitter.svg);
-}
-
-.social-item:nth-child(3) {
-  background-image: url(/images/pinterest.svg);
-}
-
-.social-item:nth-child(4) {
-  background-image: url(/images/instagram.svg);
-}
-
-.footer-link {
-
   color: #A2A2A2;
 }
 
+.form-label-checkbox {
 
+  list-style-type: none;
+}
+
+.form-input-text {
+
+  margin-left: 20px;
+}
+
+.form-checkbox::before {
+
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  display: block;
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+}
+
+.form-checkbox:checked + .form-checkbox::after {
+
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 14.23px;
+  height: 14.64px;
+  background-image: url(/images/galka.svg);
+
+}
 
