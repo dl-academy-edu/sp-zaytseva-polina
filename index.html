@@ -55,9 +55,9 @@
         <div class="slider">
           <div class="slide">
             <img class="slide-fon" src="images/poster.png" alt="slide">
-            <h2 class="slide-title">THE OOH NOO COLLECTION</h2>
-            <p class="slide-text">Designed in Slovenia</p>
-            <a class="slide-link button button_black" href="#">EXPLORE NOW</a>
+              <h2 class="slide-title">THE OOH NOO COLLECTION</h2>
+              <p class="slide-text">Designed in Slovenia</p>
+              <a class="slide-link button button_black" href="#">EXPLORE NOW</a>
           </div>
           <div class="slide hidden">
             <img class="slide-fon" src="images/poster.png" alt="slide">
@@ -114,7 +114,7 @@
         <div class="delivery-content">
           <h2 class="delivery-title">Delivery</h2>
           <ul class="delivery-buttons-list list-hidden-marker">
-            <li class="delivery-button-item"><button class="delivery-button">Delivery</button></li>
+            <li class="delivery-button-item"><button class="delivery-button button-blue">Delivery</button></li>
             <li class="delivery-button-item"><button class="delivery-button">Guarantee</button></li>
             <li class="delivery-button-item"><button class="delivery-button">Credit</button></li>
           </ul>
@@ -138,17 +138,17 @@
 
       <div class="about-us container">
         <section class="design-life-kids">
-          <h1 class="design-life-kids">Design Life Kids</h1>
-          <h2 class="about-us-title">About Us</h2>
+          <h1 class="design-life-kids-title">DESIGN LIFE KIDS</h1>
+          <h3 class="about-us-title">About Us</h3>
           <p class="about-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
             shocked that four years have flown by. It's simply magical.</p>
-          <a class="design life kids-link button button_black" href="#">buy now</a>
+          <a class="design life kids-button button_black" href="#">buy now</a>
         </section>
         <section class="contacts">
-            <h2 class="contacts">Contacts</h2>
-            <p class="contact-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
-              shocked that four years have flown by. It's simply magical.</p>
-            <img class="map-image" src="images/map.png" alt="map">
+          <h2 class="contacts-title">CONTACTS</h2>
+          <p class="contact-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
+            shocked that four years have flown by. It's simply magical.</p>
+          <img class="map-image" src="images/map.png" alt="map">
         </section>
     </div>
     </main>
@@ -214,24 +214,28 @@
 
   <div class="modal-form container">
     <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-      <div class="form-name">
+      <div>
         <label class="form-label" for="input-name">Name</label>
         <input class="form-input" name="name" id="input-name" type="text">
       </div>
       <div class="form-row">
-        <label class="form-label" for="input-phone">Phone</label>
-        <input class="form-input" name="phone" id="input-phone" type="tel">
-        <label class="form-label" for="input-email">Email</label>
-        <input class="form-input" name="email" id="input-email" type="email">
+        <div class="form-communication">
+          <label class="form-label" for="input-phone">Phone</label>
+          <input class="form-input" name="phone" id="input-phone" type="tel">
+        </div>
+        <div class="form-communication">
+          <label class="form-label" for="input-email">Email</label>
+          <input class="form-input" name="email" id="input-email" type="email">
+        </div>
       </div>
       <div>
         <label class="form-label" for="input-message">Message</label>
         <input class="form-input" name="message" id="input-message">
       </div>
       <div>
-        <input class="form-label-checkbox hidden" id="input-accept" name="accept" type="checkbox">
+        <input class="form-input-checkbox hidden" id="input-accept" name="accept" type="checkbox">
         <span class="form-checkbox"></span>
-        <label class="form-input-text" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
+        <label class="form-label-text" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
       </div>
       <button class="button-form button_black" type="submit">SUBMIT</button>
     </form>

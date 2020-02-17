@@ -26,7 +26,7 @@ a {
 
 .button_black {
 
-  min-height: 40px;
+  display: inline-block;
   padding: 9px 22px;
   font-weight: bold;
   font-size: 16px;
@@ -127,9 +127,9 @@ a {
 .footer {
 
   padding: 100px 0;
-  background: #434343;
   margin-top: 60px;
   color: #FFFFFF;
+  background: #434343;
 }
 
 .footer-container {
@@ -147,7 +147,9 @@ a {
 
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 49px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666666
 }
 
 .navigation-list {
@@ -158,6 +160,7 @@ a {
 .information-list {
 
   padding: 0;
+  margin: 28px 0;
 }
 
 .gray_text {
@@ -175,9 +178,9 @@ a {
 .footer-stars {
 
   display: flex;
-  
   align-items: center;
   border-top: 1px solid #666666;
+  margin-top: 52px;
 }
 
 .footer-star-block {
@@ -203,24 +206,30 @@ a {
 
   display: flex;
   justify-content: space-between;
+  margin-top: 25px 0;
 }
 
-.connect-form:hover {
+.connect-email:hover {
 
   background: #666666;
 }
 
-.connect-form:active {
+.connect-email:active {
 
   border: 1px solid #FFFDFD;
   box-sizing: border-box;
-
 }
 
 .connect-email {
 
-  width: 380px;
-  height: 40px;
+  width: 100%;
+  padding: 9px 0;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-width: 0;
+  color: #EBEBEB;
   background: #666666;
 }
 

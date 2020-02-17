@@ -8,6 +8,7 @@
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
   background: #EEE4DB;
+
 }
 
 .slider-buttons {
@@ -22,10 +23,14 @@
 
 .slide-fon {
 
+  margin-left: 445px;
 }
+
 
 .slide-title {
 
+  width: 307px;
+  height: 88px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -96,6 +101,7 @@
   justify-content: space-between;
   padding: 0 20px;
   margin-top: 30px;
+  
 }
 
 .category-img {
@@ -177,7 +183,8 @@
   font-size: 38px;
   line-height: 46px;
   color: #1E0606;
-  
+  margin-top: 30px;
+  margin-bottom: 6px;
 }
 
 .delivery-buttons-list {
@@ -193,8 +200,16 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
-  margin: 20px 0;
+  margin-bottom: 22px;
   padding: 0;
+}
+
+.button-blue {
+
+  font-weight: bold;
+  padding: 11px 180px 11px 60px ;
+  margin-left: -50px;
+  background: rgba(112, 187, 220, 0.2);
 }
 
 .delivery-text {
@@ -219,6 +234,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 97px;
+  padding: 0;
 }
 
 /* design-life-kids */
@@ -227,20 +243,39 @@
 
   display: flex;
   justify-content: space-between;
-}
-
-.design-life-kids {
-
-  font-size: 38px;
-  line-height: 46px;
-  color: #1E0606;
-  border: 357px 47px;
-  background-color: #E1F0F7;
-  margin-right: 57px;
+  margin-bottom: 110px;
 }
 
 .about-us-title {
 
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.design-life-kids {
+
+  background-color: #E1F0F7;
+  margin-right: 57px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.design-life-kids-title {
+
+  position: absolute;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+}
+
+.about-us-title {
+
+  padding: 10px 10px;
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
@@ -248,15 +283,33 @@
 
 .about-text {
 
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
+}
+
+.kids-button {
+
+  margin-bottom: 35px;
 }
 
 /* contacts */
 
 .contacts {
 
+  position: relative;
+  padding: 0 30px;
+  background: #E1F0F7;
+  margin-bottom: 60px;
+}
+
+.contacts-title {
+
+  position: absolute;
+  transform: translateY(-50%);
+  margin: 0;
   font-size: 38px;
   line-height: 46px;
   color: #1E0606;
@@ -264,6 +317,7 @@
 
 .contact-text {
 
+  padding: 20px;
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
@@ -271,6 +325,7 @@
 
 .map-image {
 
+  position: absolute;
 }
 
 /* modal form */
@@ -297,6 +352,7 @@
 
 .form-label {
 
+  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 }
@@ -312,8 +368,15 @@
 
 .form-row {
 
+  margin: 0 -10px;
   display: flex;
   justify-content: space-between;
+}
+
+.form-communication {
+
+  margin: 0 10px;
+  width: 100%;
 }
 
 .button-form {
@@ -322,18 +385,18 @@
   font-weight: bold;
   padding: 9px 22px;
   width: 106px;
-  height: 40px;
+  height: 50px;
   color: #E1E1E1;
   background-color: #C1C1C1;
   margin-top: 20px;
 }
 
-.form-label-checkbox {
+.form-input-checkbox {
 
   list-style-type: none;
 }
 
-.form-input-text {
+.form-label-text {
 
   margin-left: 20px;
 }
@@ -351,7 +414,7 @@
 
 }
 
-.form-checkbox:checked:after {
+.form-input-checkbox:checked + .form-checkbox:after {
 
   content: "";
   position: absolute;
