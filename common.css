@@ -192,6 +192,16 @@ a {
   color: #AAAAAA;
 }
 
+.information-item:hover {
+
+  opacity: 0.5;
+}
+
+.navigation-item:hover {
+
+  opacity: 0.5;
+}
+
 .information-link {
 
   font-size: 16px;
@@ -204,7 +214,6 @@ a {
   display: flex;
   align-items: center;
   border-top: 1px solid #666666;
-  margin-top: 52px;
 }
 
 .footer-star-block {
@@ -226,33 +235,10 @@ a {
   margin-right: 25px;
 }
 
-.star-text:hover {
-
-  color: #C29974;
-  
-}
-
-.star-text:active {
-
-  color: #C29974;
-}
-
 .connect-form {
 
   display: flex;
-  justify-content: space-between;
   margin-top: 25px 0;
-}
-
-.connect-email:hover {
-
-  background: #666666;
-}
-
-.connect-email:active {
-
-  border: 1px solid #FFFDFD;
-  box-sizing: border-box;
 }
 
 .connect-email {
@@ -263,9 +249,23 @@ a {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  border-width: 0;
+  border: 1px solid transparent;
   color: #EBEBEB;
-  background: #666666;
+  background-color: #666666;
+}
+
+.connect-email:hover {
+
+  cursor: pointer;
+  border-color: #FFFFFF;
+}
+
+.connect-email:active {
+
+  cursor: none;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #1E0606;
 }
 
 .button-connect {
@@ -299,4 +299,11 @@ a {
   
   opacity: 0.5;
   cursor: pointer;
+}
+
+.footer-link:hover {
+
+  text-decoration-line: underline;
+  color: #FFFFFF;
+
 }

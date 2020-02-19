@@ -265,9 +265,7 @@
 
 .design-life-kids-title {
 
-  position: absolute;
-  transform: translateY(-50%);
-  margin: 0;
+  margin: -25px 0;
   font-size: 38px;
   line-height: 46px;
   color: #1E0606;
@@ -396,33 +394,37 @@
   list-style-type: none;
 }
 
-.form-label-text {
+.form-label-checkbox {
 
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox {
+
+  padding-left: 35px;
 }
 
 .form-checkbox::before {
 
   content: "";
+  display: block;
   position: absolute;
   width: 19px;
   height: 19px;
-  display: block;
-  border: 2px solid #C29974;
   box-sizing: border-box;
+  border: 2px solid #C29974;
   border-radius: 3px;
-
 }
 
 .form-input-checkbox:checked + .form-checkbox:after {
 
   content: "";
+  display: block;
   position: absolute;
   width: 19px;
   height: 19px;
-  display: block;
   box-sizing: border-box;
   background-image: url(/images/galka.svg);
-
 }
 
