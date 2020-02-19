@@ -26,6 +26,7 @@ a {
 
 .button_black {
 
+  transition: 1s;
   display: inline-block;
   padding: 9px 22px;
   font-weight: bold;
@@ -38,7 +39,6 @@ a {
 .button_black:hover {
 
   background-color: #C29974;
-  transition: 1s;
 }
 
 .button_black:active {
@@ -151,7 +151,6 @@ a {
 .footer {
 
   padding: 100px 0;
-  margin-top: 60px;
   color: #FFFFFF;
   background: #434343;
 }
@@ -192,12 +191,12 @@ a {
   color: #AAAAAA;
 }
 
-.information-item:hover {
+.information-link:hover {
 
   opacity: 0.5;
 }
 
-.navigation-item:hover {
+.navigation-link:hover {
 
   opacity: 0.5;
 }
