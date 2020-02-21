@@ -7,8 +7,7 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
-  background: #EEE4DB;
-
+  background: #EEE4DB
 }
 
 .slider-buttons {
@@ -202,7 +201,6 @@
 .delivery-button:hover {
 
   cursor: pointer;
-  font-weight: bold;
   background: rgba(151, 193, 211, 0.2);
 }
 
@@ -214,6 +212,33 @@
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
+}
+
+.category-product {
+
+  width: 680px;
+}
+
+.main-title {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.main-text {
+
+  font-family: 'Open Sans', sans-serif;
+  width: 680px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
 /* partners */
