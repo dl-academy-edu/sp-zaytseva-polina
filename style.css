@@ -73,6 +73,15 @@
 
 /* category */
 
+.category-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
 .category-item {
 
   position: relative;
@@ -88,15 +97,6 @@
   line-height: 46px;
   color: #1E0606;
   text-align: left;
-}
-
-.category-list {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 10px;
-  margin-top: 30px;
 }
 
 .category-img {
@@ -191,8 +191,7 @@
 
   font-family: 'Crimson Text', serif;
   background: transparent;
-  display: flex;
-  justify-content: start;
+  text-align: start;
   width: 326px;
   font-size: 26px;
   line-height: 32px;
@@ -329,9 +328,27 @@
 
 /* 2 страница CATALOG */
 
-.category-product {
+.categorys-list {
 
-  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+
+.categorys-item {
+
+  position: relative;
+  width: 25%;
+  height: 270px;
+  margin: 0 -10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.categorys-item:nth-child(4) {
+
+  margin-left: 200px;
 }
 
 .main-title {
@@ -348,11 +365,33 @@
 .main-text {
 
   font-family: 'Open Sans', sans-serif;
-  width: 680px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 0;
   color: #1E0606;
-  margin-top: 0px;
+}
+
+.categorys-link {
+
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 20px;
+  color: #1E0606;
+}
+
+.categorys-arrow {
+
+  margin-right: 20px;
+}
+
+.categorys-product {
+
+  width: 680px;
   margin-bottom: 60px;
 }
 
