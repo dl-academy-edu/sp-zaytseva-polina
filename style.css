@@ -298,9 +298,10 @@
 /* contacts */
 
 .contacts {
-
   position: relative;
+  bottom: 33px;
   padding: 0 30px;
+  padding-bottom: 60px;
   background: #E1F0F7;
 }
 
@@ -322,8 +323,9 @@
 
 .map-image {
 
+  box-sizing: border-box;
   position: absolute;
-  top: 80%;
+  top: 60%;
 }
 
 /* 2 страница CATALOG */
@@ -397,11 +399,6 @@
 
 /* modal form */
 
-.modal-form {
-
-  background: #E5EAF8;
-}
-
 .contact-us-form {
 
   max-width: 680px;
@@ -409,6 +406,7 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
+  background-color: #E5EAF8;
 }
 
 .form-label {
