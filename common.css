@@ -225,7 +225,7 @@ a {
   cursor: pointer;
   margin-right: 3px;
   outline: none;
-  border: 0px;
+  border: 0;
   background: transparent;
 }
 
