@@ -1,59 +1,80 @@
 /* slider */
 
 .main-slider {
-
-  width: 1180px;
-  height: 411px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 411px;
+  margin-top: 129px;
   background: #EEE4DB;
 }
 
 .slide {
-
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-height: 372px;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
-  top: 160px;
-  margin-bottom: 160px;
 }
 
 .slider-number {
 
   width: 61px;
-  height: 74px;
+  height: 70px;
+  margin-bottom: 17px;
+
   font-weight: 300;
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
   background: #EEE4DB;
-  padding-left: 31px;
+  
 }
 
 .slider-buttons {
-
-  width: 31px;
-  height: 3px;
-  left: 141px;
-  top: 332px;
+  position: absolute;
+  z-index: 1;
+  left: 28px;
+  top: 17px;
   display: flex;
   flex-direction: column;
-  padding-left: 31px;
+}
+
+.slider-button {
+  display: block;
+  width: 31px;
+  height: 3px;
+  margin-bottom: 11px;
+  background-color: #D6CAC2;
+}
+
+.slider-button:hover {
+  background-color: rgba(30, 6, 6, 0.6);
 }
 
 .slide-img {
 
   position: absolute;
   margin-left: 445px;
-  bottom: 3px;
+  bottom: 0;
 }
 
 
 .slide-title {
-
+  display: block;
   width: 307px;
-  height: 88px;
+  min-height: 88px;
+  padding-top: 89px;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -65,7 +86,7 @@
 }
 
 .slide-text {
-
+  display: inline-block;
   margin-top: 20px;
   margin-bottom: 0;
   font-family: 'Crimson Text', serif;
@@ -76,28 +97,30 @@
 }
 
 .slide-link {
+  margin-top: 20px;
+  margin-left: 133px;
 
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
   background: #000000;
-  margin-top: 0;
-  margin-left: 133px;
 }
 
 
 .discount-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 39px;
 
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #C29974;
-  padding: 22px 0;
-  
 }
 
 
@@ -329,13 +352,13 @@
 /* contacts */
 
 .contacts {
-
   width: 543px;
   margin-left: 28.5px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   position: relative;
   padding: 0 30px;
+  padding-bottom: 80px;
   background: #E1F0F7;
 }
 
@@ -359,7 +382,7 @@
 .map-image {
 
   position: absolute;
-  top: calc(100% - 80%);
+  top: calc(100% - 80px);
 }
 
 /* modal form */
@@ -542,9 +565,6 @@
 
 /* 3 страница Toys */
 
-.toys-list {
-
-}
 
 .toys-title {
 
@@ -577,9 +597,6 @@
   background: rgba(125, 151, 218, 0.2);
 }
 
-.toys-shop {
-
-}
 
 .shop-list {
 
@@ -626,10 +643,6 @@
   text-align: left;
 }
 
-.blog-img {
-
-}
-
 .blog-text {
 
   font-family: 'Open Sans', sans-serif;
@@ -659,29 +672,99 @@
   opacity: 0.5;
 }
 
-
-.img-nav-number {
-
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #1E0606;
-}
-
-.img-nav-item {
+.img-nav {
 
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
 }
 
 .img-nav-link {
 
+  display: flex;
+  justify-content: space-between;
 }
+
+.img-nav-number {
+
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 230px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-left: 0;
+  color: #1E0606;
+}
+
 
 .img-nav-item {
 
+  display: flex;
+}
+
+/* 5 страница contact-us-text */
+
+.contact-us-body {
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact-us-link {
+
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #1E0606;
+}
+
+.contact-us-link:hover {
+
+  cursor: pointer;
+  color: #1E0606;
+  opacity: 0.5;
+}
+
+.contact-us-arrow {
+
+  margin-right: 20px;
+}
+
+.contact-us-title {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
+  margin-top: 90px;
+}
+
+.contact-us-text {
+
+  margin-left: 120px;
+  width: 380px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.contact-us-text-expert {
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  width: 380px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #C29974;
 }

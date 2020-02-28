@@ -50,6 +50,7 @@ a {
 
 .header {
 
+  margin-top: 50px;
   margin-bottom: 56px;
 }
 
@@ -153,6 +154,7 @@ a {
   padding: 100px 0;
   color: #FFFFFF;
   background: #434343;
+  margin-top: 60px;
 }
 
 .footer-container {
@@ -208,7 +210,7 @@ a {
   color: #FFFFFF;
 }
 
-.footer-stars {
+.footer-line {
 
   display: flex;
   align-items: center;

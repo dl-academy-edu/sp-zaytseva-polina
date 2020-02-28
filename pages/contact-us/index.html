@@ -23,13 +23,13 @@
         <nav class="header-menu-wrapper">
           <ul class="list-hidden-marker header-menu">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="pages/blog/index.html">BLOG</a>
+              <a class="header-menu-link" href="/pages/blog/index.html">BLOG</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="pages/catalog/index.html">CATALOG</a>
+              <a class="header-menu-link" href="/pages/catalog/index.html">CATALOG</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="pages/contact-us/index.html">ABOUT US</a>
+              <a class="header-menu-link" href="/pages/contact-us/index.html">ABOUT US</a>
             </li>
           </ul>
           <ul class="search-list list-hidden-marker">
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li>
-              <a class="search-text" href="pages/contact-us/index.html">Contact Us</a>
+              <a class="search-text" href="/pages/contact-us/index.html">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -47,36 +47,50 @@
     </header>
 
   <main>
-    <h1 class="contact-us-title">Contact Us</h1>
-    <a href="#">Home</a>
-    <img class="category-img" src="/images/vector3.svg" alt="vector3">
-    <a href="#">Catalog</a>
-    <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-      <p>
-        <label for="input-name">Name</label>
-        <input name="name" id="input-name" type="text">
-      </p>
-      <p>
-        <label for="input-phone">Phone</label>
-        <input name="phone" id="input-phone" type="tel">
-      </p>
-      <p>
-        <label for="input-email">Email</label>
-        <input name="email" id="input-email" type="email">
-      </p>
-      <p>
-        <label for="input-message">Message</label>
-        <textarea name="message" id="input-message" cols="30" rows="10"></textarea>
-      </p>
-      <p>
-        <input id="input-accept" name="accept" type="checkbox">
-        <label for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
-      </p>
-      <button type="submit">Submit</button>
-    </form>
-    <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.
-      Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-    <p style="color: #C29974;" class="contact-us-text-expert">An expert is waiting to help you!</p>
+      <div class=" container">
+        <section class="contact-us">
+          <h2 class="contact-us-title">CONTACT US</h2>
+        
+          <a class="contact-us-link" href="/index.html">Home</a>
+          <img class="contegory-arrow" src="/images/vector3.svg" alt="vector3">
+          <a class="contact-us-link" href="#">Contact us</a>
+        <div class="contact-us-body">
+          <div class="modal-form modal-form-window container">
+          <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <div>
+              <label class="form-label" for="input-name">Name</label>
+              <input class="form-input" name="name" id="input-name" type="text">
+            </div>
+            <div class="form-row">
+              <div class="form-communication">
+                <label class="form-label" for="input-phone">Phone</label>
+                <input class="form-input" name="phone" id="input-phone" type="tel">
+              </div>
+              <div class="form-communication">
+                <label class="form-label" for="input-email">Email</label>
+                <input class="form-input" name="email" id="input-email" type="email">
+              </div>
+            </div>
+            <div>
+              <label class="form-label" for="input-message">Message</label>
+              <input class="form-input" name="message" id="input-message">
+            </div>
+            <label class="form-label" for="input-accept">
+              <input class="form-input-checkbox hidden" id="input-accept" name="accept" type="checkbox" 
+              value="By clicking on the button, you consent to the processing of your personal data">
+              <span class="form-checkbox"></span>
+              By clicking on the button, you consent to the processing of your personal data
+            </label>
+            <button class="button-form button_black" type="submit">SUBMIT</button>
+          </form>
+          </div>
+          <section class="contact-us-text">
+          <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+          <h3 class="contact-us-text-expert">An expert is waiting to help you!</h3>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -122,7 +136,7 @@
             </ul>
         </section>
       </div>
-      <div class="footer-stars">
+      <div class="footer-line">
         <div class="footer-star-block footer-container">
           <p class="star-text">Company Rating</p>
           <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
@@ -136,5 +150,6 @@
       </div>
     </div>      
   </footer>
+
 </body>
 </html>
