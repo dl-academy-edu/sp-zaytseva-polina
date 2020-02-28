@@ -1,5 +1,12 @@
 /* slider */
 
+.main-slider {
+
+  width: 1180px;
+  height: 411px;
+  background: #EEE4DB;
+}
+
 .slide {
 
   position: relative;
@@ -8,7 +15,8 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
-  background: #EEE4DB;
+  top: 160px;
+  margin-bottom: 160px;
 }
 
 .slider-number {
@@ -18,6 +26,7 @@
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
   background: #EEE4DB;
+  
 }
 
 .slider-buttons {
@@ -28,11 +37,14 @@
   top: 332px;
   display: flex;
   flex-direction: column;
+  padding-left: 31px;
 }
 
 .slide-img {
 
+  position: absolute;
   margin-left: 445px;
+  bottom: 3px;
 }
 
 
@@ -50,7 +62,8 @@
 
 .slide-text {
 
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
   font-family: 'Crimson Text', serif;
   font-size: 20px;
   line-height: 25px;
@@ -64,6 +77,7 @@
   line-height: 22px;
   color: #FFFFFF;
   background: #000000;
+  margin-top: 0;
 }
 
 
@@ -77,7 +91,7 @@
   color: #FFFFFF;
   background-color: #C29974;
   padding: 22px 0;
-  margin-bottom: 90px;
+  
 }
 
 
@@ -107,6 +121,7 @@
   line-height: 46px;
   color: #1E0606;
   text-align: left;
+  margin-top: 90px;
 }
 
 .category-img {
@@ -662,5 +677,5 @@
 }
 
 .img-nav-item {
-  
+
 }
