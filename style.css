@@ -256,6 +256,21 @@
   margin-left: -60px;
 }
 
+.delivery-button1 {
+
+  font-family: 'Crimson Text', serif;
+  background: transparent;
+  text-align: start;
+  width: 326px;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+  padding: 11px 0;
+  padding-left: 60px;
+  margin-left: -60px;
+  background-color: rgba(112, 187, 220, 0.2);
+}
+
 .delivery-button:hover {
 
   cursor: pointer;
@@ -352,13 +367,11 @@
 /* contacts */
 
 .contacts {
+
   width: 543px;
   margin-left: 28.5px;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding: 0 30px;
-  padding-bottom: 80px;
+  padding: 0 30px 80px 30px;
   background: #E1F0F7;
 }
 
@@ -408,8 +421,8 @@
 
   width: 100%;
   height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 43px;
 }
 
@@ -462,7 +475,7 @@
 
 .form-input:active {
 
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-checkbox::before {
@@ -565,6 +578,10 @@
 
 /* 3 страница Toys */
 
+.toys-section {
+
+  background-color: rgba(125, 151, 218, 0.2);
+}
 
 .toys-title {
 
@@ -577,9 +594,94 @@
   text-align: left;
 }
 
+.section-title {
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.toys-text {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.toys-link {
+
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 20px;
+  color: #1E0606;
+
+}
+
+.toys-link:hover {
+
+  cursor: pointer;
+  color: #1E0606;
+  opacity: 0.5;
+}
+
 .toys-arrow {
 
   margin-right: 20px;
+}
+
+.toys-form {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form-section {
+
+  margin: 0;
+}
+
+.button-amount1 {
+
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  margin-top: 22px;
+  padding: 7px 20px 6px 20px;
+  background-color: #F3D0DB;
+}
+
+.button-amount2 {
+
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  margin-top: 22px;
+  padding: 7px 20px 6px 20px;
+  background: #FFFFFF;
+}
+
+.button-amount1:hover {
+
+  background-color: #EDDEEB;
+}
+
+.button-amount2:hover {
+
+  background-color: #EDDEEB;
+}
+
+.button-form-amount {
+
+  margin: 79px 0 135px 60px;
 }
 
 .toys-shop {
@@ -588,15 +690,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
-.toys-form {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: rgba(125, 151, 218, 0.2);
-}
-
 
 .shop-list {
 
@@ -637,10 +730,39 @@
 .blog-title {
 
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1E0606;
+  text-align: left;
+}
+
+.blog-note {
+
+  font-family: 'Roboto', ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+  mix-blend-mode: normal;
+}
+
+.blog-heading {
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #1E0606;
-  text-align: left;
+}
+
+.blog-heading:hover {
+
+  text-decoration-line: underline;
+  color: #1E0606;
+
 }
 
 .blog-text {
@@ -674,6 +796,7 @@
 
 .img-nav {
 
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;

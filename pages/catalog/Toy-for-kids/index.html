@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/style.css">
     <title>DLK</title>
@@ -45,85 +46,86 @@
     </header>
 
     <main>
-      <section class="toys container">
-        <h1 class="toys-title">Toy for kids</h1>
-        <a href="#">Home</a>
-        <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
-        <a href="#">Catalog</a>
-        <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
-        <a href="#">Toys</a>
+        <section class="toys container">
+          <h1 class="toys-title">Toy for kids</h1>
+          <a class="toys-link" href="#">Home</a>
+          <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
+          <a class="toys-link" href="#">Catalog</a>
+          <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
+          <a class="toys-link" href="#">Toys</a>
+        </section>
+        <section class="toys-section">
+          <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <fieldset class="form-section">
+              <legend class="section-title">Cost</legend>
+              <p>
+              <label for="input-cost">0</label>
+              <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
+              <label for="input-cost">500</label>
+              </p>
+            </fieldset>
+            <fieldset class="form-section">
+            <legend class="section-title">Color</legend>
+              <p>
+                <input id="input-black" name="black" type="checkbox" value="black">
+                <label class="toys-text" for="input-black">Black</label>
+              </p>
+              <p>
+                <input id="input-blue" name="blue" type="checkbox" value="blue">
+                <label class="toys-text" for="input-blue">Blue</label>
+              </p>
+              <p>
+                <input id="input-green" name="green" type="checkbox" value="green">
+                <label class="toys-text" for="input-green">Green</label>
+              </p>
+              <p>
+                <input id="input-white" name="white" type="checkbox" value="white">
+                <label class="toys-text" for="input-white">White</label>
+              </p>
+            </fieldset>
+            <fieldset class="form-section">
+            <legend class="section-title">Delivery</legend>
+              <p>
+                <input id="input-free" name="free" type="radio" value="free shipping">
+                <label class="toys-text" for="input-free">Free shipping</label>
+              </p>
+              <p>
+                <input id="input-fast" name="fast" type="radio" value="fast shipping">
+                <label class="toys-text" for="input-fast">Fast shipping</label>
+              </p>
+            </fieldset>
+            <fieldset class="form-section">
+              <legend class="section-title">Amount</legend>
+                <button class="button-amount1" type="submit">0-5</button>
+                <button class="button-amount2" type="submit">10-20</button>  
+                <button class="button-amount2" type="submit">20-50</button>
+            </fieldset>
+            <button class="button-form-amount button_black" type="submit">APLLY</button>
+          </form>
+        </section>
 
-        <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST"></form>
-          <fieldset>
-            <legend>Cost</legend>
-            <p>
-            <label for="input-cost">0</label>
-            <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
-            <label for="input-cost">500</label>
-            </p>
-          </fieldset>
-          <fieldset>
-          <legend>Color</legend>
-            <p>
-              <input id="input-black" name="black" type="checkbox" value="black">
-              <label for="input-black">Black</label>
-            </p>
-            <p>
-              <input id="input-blue" name="blue" type="checkbox" value="blue">
-              <label for="input-blue">Blue</label>
-            </p>
-            <p>
-              <input id="input-green" name="green" type="checkbox" value="green">
-              <label for="input-green">Green</label>
-            </p>
-            <p>
-              <input id="input-white" name="white" type="checkbox" value="white">
-              <label for="input-white">White</label>
-            </p>
-          </fieldset>
-          <fieldset>
-          <legend>Delivery</legend>
-            <p>
-              <input id="input-free" name="free" type="radio" value="free shipping">
-              <label for="input-free">Free shipping</label>
-            </p>
-            <p>
-              <input id="input-fast" name="fast" type="radio" value="fast shipping">
-              <label for="input-fast">Fast shipping</label>
-            </p>
-          </fieldset>
-          <fieldset>
-          <legend>Amount</legend>
-          <button type="submit">0-5</button>
-          <button type="submit">10-20</button>  
-          <button type="submit">20-50</button>
-          </fieldset>
-          <button type="submit">apply</button>
-        <form>
-      </section>
-
-      <section class="toys-shop container">
-        <ul class="shop-list list-hidden-marker">
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p></a>
-          </li>
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/brass.jpg" alt="brass"></a>
-          </li>
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/cibo.jpg" alt="cibo"></a>
-          </li>
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/gatcha.jpg" alt="gatcha"></a>
-          </li>
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/christmas.jpg" alt="christmas"></a>
-          </li>
-          <li class="shop-item"><a href="/index.html">
-            <img class="shop-img" src="/images/tangle.jpg" alt="tangle"></a>
-          </li>
-        </ul>
-      </section>
+        <section class="toys-shop container">
+          <ul class="shop-list list-hidden-marker">
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p></a>
+            </li>
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/brass.jpg" alt="brass"></a>
+            </li>
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/cibo.jpg" alt="cibo"></a>
+            </li>
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/gatcha.jpg" alt="gatcha"></a>
+            </li>
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/christmas.jpg" alt="christmas"></a>
+            </li>
+            <li class="shop-item"><a href="/index.html">
+              <img class="shop-img" src="/images/tangle.jpg" alt="tangle"></a>
+            </li>
+          </ul>
+        </section>
       <div class="container">
         <div class="img-nav list-hidden-marker">
           <span>
@@ -171,7 +173,7 @@
                 </ul>
               </nav>
           </section>
-          <section class="footer-connect footer-container">
+          <section class="footer-container">
             <h4 class="footer-title gray_text">Connect</h4>
             <form class="connect-form" name="user" action="index.html" method="POST">
               <input class="connect-email"  type="email" autocomplete="on" placeholder="Email">
