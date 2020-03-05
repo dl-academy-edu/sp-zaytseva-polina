@@ -13,12 +13,10 @@
 
 .slide {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: baseline;
   min-height: 372px;
-
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 60px;
@@ -31,7 +29,6 @@
   width: 61px;
   height: 70px;
   margin-bottom: 17px;
-
   font-weight: 300;
   font-size: 60px;
   line-height: 73px;
@@ -42,7 +39,6 @@
 
 .slider-buttons {
   position: absolute;
-  z-index: 1;
   left: 28px;
   top: 17px;
   display: flex;
@@ -400,6 +396,29 @@
 
 /* modal form */
 
+.modal-form_none {
+
+  display: none;
+}
+
+.modal-form {
+
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(125, 151, 218, 0.8);
+  display: none;
+}
+
+.modal-form-window {
+
+  margin: auto;
+  position: relative;
+}
+
 .contact-us-form {
 
   max-width: 680px;
@@ -603,14 +622,6 @@
   color: #1E0606;
 }
 
-.toys-text {
-
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #1E0606;
-}
-
 .toys-link {
 
   font-family: 'Crimson Text', serif;
@@ -618,7 +629,6 @@
   line-height: 25px;
   margin-right: 20px;
   color: #1E0606;
-
 }
 
 .toys-link:hover {
@@ -637,51 +647,132 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   margin-top: 50px;
   margin-bottom: 60px;
   padding-top: 42px;
   padding-bottom: 44px;
 }
 
-.form-section {
+.form-sections {
 
   margin: 0;
 }
 
-.button-amount1 {
+.form-text {
 
-  cursor: pointer;
-  width: 80px;
-  height: 35px;
-  margin-top: 22px;
-  padding: 7px 20px 6px 20px;
-  background-color: #F3D0DB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
 }
 
-.button-amount2 {
+.color-section {
 
-  cursor: pointer;
-  width: 80px;
-  height: 35px;
-  margin-top: 22px;
-  padding: 7px 20px 6px 20px;
-  background: #FFFFFF;
+  margin: 15px 0;
 }
 
-.button-amount1:hover {
+.label-color {
+
+  position: relative;
+  padding-left: 25px;
+}
+
+.label-color::before {
+
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 19px;
+  height: 19px;
+  transform: translateY(-50%);
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.form-color:checked + .label-color:after {
+
+  content: "";
+  display: block;
+  position: absolute;
+  left: 2;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  background-image: url(/images/galka.svg);
+}
+
+.label-shipping {
+
+  position: relative;
+  padding-left: 30px;
+}
+
+.label-shipping::before {
+
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.form-shipping:checked + .label-shipping::after {
+
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  background-color: #C29974;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.amount-section {
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 16px 0;
+}
+
+.label-amount {
+
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 25px;
+  min-width: 80px;
+  background: #F3D0DB;
+}
+
+.label-amount:hover {
 
   background-color: #EDDEEB;
 }
 
-.button-amount2:hover {
+.label-amount:active {
 
-  background-color: #EDDEEB;
+  background-color: #FFFFFF;
 }
 
 .button-form-amount {
 
-  margin: 79px 0 135px 60px;
+  display: block;
+  margin-top: 35px;
 }
 
 .toys-shop {
@@ -696,6 +787,19 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 53px;
+  margin: -10px;
+}
+
+.shipping-section {
+
+  margin: 15px 0 10px 0;
+}
+
+.shop-item {
+
+  margin: 10px;
 }
 
 .shop-text {
@@ -707,6 +811,21 @@
   line-height: 19px;
   text-align: center;
   color: #1E0606;
+  padding-top: 30px;
+  margin: 0;
+}
+
+.usd-text {
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1E0606;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
 /* 4 страница blog */
@@ -890,4 +1009,29 @@
   line-height: 34px;
   text-transform: uppercase;
   color: #C29974;
+}
+
+.button-form {
+
+  cursor: pointer;
+  font-weight: bold;
+  padding: 9px 22px;
+  width: 106px;
+  height: 50px;
+  border: 1px solid transparent;
+  color: #E1E1E1;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.button-form:hover {
+
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #C29974;
+}
+
+.button-form:active {
+
+  background-color: #CFAF91;
 }

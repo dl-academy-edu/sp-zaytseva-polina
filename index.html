@@ -38,7 +38,7 @@
                 </a>
               </li>
               <li>
-                <a class="search-text" href="pages/contact-us/index.html">Contact Us</a>
+                <a class="search-text" href="/pages/contact-us/index.html">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -60,7 +60,7 @@
               <img class="slide-img" src="images/poster.png" alt="slide">
                 <h2 class="slide-title">THE OOH NOO COLLECTION</h2>
                 <p class="slide-text">Designed in Slovenia</p>
-                <a class="slide-link button_black" href="#">EXPLORE NOW</a>
+                <button class="slide-link button_black" href="#">EXPLORE NOW</button>
             </div>
             <div class="slide hidden">
               <img class="slide-img" src="images/poster.png" alt="slide">
@@ -216,8 +216,8 @@
     </footer>
 
 
-  <div class="modal-form modal-form-window container">
-      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+  <div class="modal-form modal-form_none modal-form_js">
+      <form class="contact-us-form modal-form-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
         <div>
           <label class="form-label" for="input-name">Name</label>
           <input class="form-input" name="name" id="input-name" type="text">
@@ -243,6 +243,7 @@
           By clicking on the button, you consent to the processing of your personal data
         </label>
         <button class="button-form button_black" type="submit">SUBMIT</button>
+        <button class="button-closed" type="button"></button>
       </form>
   </div>
   </body>

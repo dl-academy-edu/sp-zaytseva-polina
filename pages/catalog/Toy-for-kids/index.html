@@ -38,7 +38,7 @@
               </a>
             </li>
             <li>
-              <a class="search-text" href="pages/contact-us/index.html">Contact Us</a>
+              <a class="search-text" href="/pages/contact-us/index.html">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -58,47 +58,55 @@
           <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
             <fieldset class="form-section">
               <legend class="section-title">Cost</legend>
-              <p>
+              <div>
               <label for="input-cost">0</label>
               <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
               <label for="input-cost">500</label>
-              </p>
+              </div>
             </fieldset>
             <fieldset class="form-section">
             <legend class="section-title">Color</legend>
-              <p>
-                <input id="input-black" name="black" type="checkbox" value="black">
-                <label class="toys-text" for="input-black">Black</label>
-              </p>
-              <p>
-                <input id="input-blue" name="blue" type="checkbox" value="blue">
-                <label class="toys-text" for="input-blue">Blue</label>
-              </p>
-              <p>
-                <input id="input-green" name="green" type="checkbox" value="green">
-                <label class="toys-text" for="input-green">Green</label>
-              </p>
-              <p>
-                <input id="input-white" name="white" type="checkbox" value="white">
-                <label class="toys-text" for="input-white">White</label>
-              </p>
+              <div class="color-section">
+                <input class="form-color hidden" id="input-black" name="color" type="checkbox" value="black">
+                <label class="label-color form-color-checkbox" for="input-black">Black</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color hidden" id="input-blue" name="color" type="checkbox" value="blue">
+                <label class="label-color form-color-checkbox" for="input-blue">Blue</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color hidden" id="input-green" name="color" type="checkbox" value="green">
+                <label class="label-color form-color-checkbox" for="input-green">Green</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color hidden" id="input-white" name="color" type="checkbox" value="white">
+                <label class="label-color form-color-checkbox" for="input-white">White</label>
+              </div>
             </fieldset>
-            <fieldset class="form-section">
+            <fieldset class="form-sections">
             <legend class="section-title">Delivery</legend>
-              <p>
-                <input id="input-free" name="free" type="radio" value="free shipping">
-                <label class="toys-text" for="input-free">Free shipping</label>
-              </p>
-              <p>
-                <input id="input-fast" name="fast" type="radio" value="fast shipping">
-                <label class="toys-text" for="input-fast">Fast shipping</label>
-              </p>
+              <div class="shipping-section">
+                <input class="form-shipping hidden" id="input-free" name="shipping" type="radio" value="free shipping">
+                <label class="label-shipping shipping-checkbox" for="input-free">Free shipping</label>
+              </div>
+              <div class="shipping-section">
+                <input class="form-shipping hidden" id="input-fast" name="shipping" type="radio" value="fast shipping">
+                <label class="label-shipping shipping-checkbox" for="input-fast">Fast shipping</label>
+              </div>
             </fieldset>
             <fieldset class="form-section">
               <legend class="section-title">Amount</legend>
-                <button class="button-amount1" type="submit">0-5</button>
-                <button class="button-amount2" type="submit">10-20</button>  
-                <button class="button-amount2" type="submit">20-50</button>
+              <ul class="amount-section list-hidden-marker">
+                <li><input class="form-amount hidden" id="input1" name="amound" type="radio" value="free shipping">
+                  <label class="label-amount" for="input1">0-5</label>
+                </li>
+                <li><input class="form-amount hidden" id="input2" name="amound" type="radio" value="free shipping">
+                  <label class="label-amount" for="input2">10-20</label>
+                </li>
+                <li><input class="form-amount hidden" id="input3" name="amound" type="radio" value="free shipping">
+                  <label class="label-amount" for="input3">20-50</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="button-form-amount button_black" type="submit">APLLY</button>
           </form>
@@ -107,22 +115,22 @@
         <section class="toys-shop container">
           <ul class="shop-list list-hidden-marker">
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p></a>
+              <img class="shop-img" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p><p class="usd-text">$60.00 USD</p></a>
             </li>
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/brass.jpg" alt="brass"></a>
+              <img class="shop-img" src="/images/brass.jpg" alt="brass"><p class="shop-text">BRASS DECO FRAMES</p><p class="usd-text">$66.00 USD</p></a>
             </li>
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/cibo.jpg" alt="cibo"></a>
+              <img class="shop-img" src="/images/cibo.jpg" alt="cibo"><p class="shop-text">CIBO FULL APRON</p><p class="usd-text">$60.00 USD</p></a>
             </li>
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/gatcha.jpg" alt="gatcha"></a>
+              <img class="shop-img" src="/images/gatcha.jpg" alt="gatcha"><p class="shop-text">GATCHA GATCHA GUMBALL MACHINE</p><p class="usd-text">$56.00 USD</p></a>
             </li>
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/christmas.jpg" alt="christmas"></a>
+              <img class="shop-img" src="/images/christmas.jpg" alt="christmas"><p class="shop-text">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="usd-text">$29.00 USD</p></a>
             </li>
             <li class="shop-item"><a href="/index.html">
-              <img class="shop-img" src="/images/tangle.jpg" alt="tangle"></a>
+              <img class="shop-img" src="/images/tangle.jpg" alt="tangle"><p class="shop-text">TANGLE SPINNING TEA LIGHT</p><p class="usd-text">$56.00 USD</p></a>
             </li>
           </ul>
         </section>

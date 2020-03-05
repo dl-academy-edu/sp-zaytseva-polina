@@ -26,7 +26,6 @@ a {
 
 .button_black {
 
-  transition: all 1s ease-out;
   display: inline-block;
   padding: 9px 22px;
   font-weight: bold;
@@ -39,6 +38,8 @@ a {
 
 .button_black:hover {
 
+  cursor: pointer;
+  transition: 0.5s;
   background-color: #C29974;
 }
 
@@ -306,5 +307,26 @@ a {
 
   text-decoration-line: underline;
   color: #FFFFFF;
+}
 
+.button-closed {
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url(/images/X.svg);
+  background-color: transparent;
+  top: 0;
+  right: -25px;
+  border: 0;
+}
+
+.button-closed:hover {
+
+  opacity: 0.5;
+}
+
+.button-closed:active {
+
+  opacity: 0.3;
 }
