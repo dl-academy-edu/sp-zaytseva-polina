@@ -262,7 +262,7 @@ a {
   border-color: #FFFFFF;
 }
 
-.connect-email:active {
+.connect-email:focus {
 
   cursor: none;
   border-color: #FFFFFF;

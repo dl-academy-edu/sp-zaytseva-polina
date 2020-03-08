@@ -38,6 +38,7 @@
 }
 
 .slider-buttons {
+  
   position: absolute;
   left: 28px;
   top: 17px;
@@ -54,6 +55,10 @@
 }
 
 .slider-button:hover {
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.slider-button__1 {
   background-color: rgba(30, 6, 6, 0.6);
 }
 
@@ -143,7 +148,6 @@
 
   text-decoration-line: underline;
 }
-
 
 .category-title {
 
@@ -405,7 +409,6 @@
   right: 0;
   bottom: 0;
   background-color: rgba(125, 151, 218, 0.8);
-  display: none;
 }
 
 .modal-form-window {
@@ -433,11 +436,19 @@
 
 .form-input {
 
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E0606;
+
   width: 100%;
   height: 50px;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 43px;
+  padding: 14px 0 14px 20px;
 }
 
 .form-row {
@@ -667,6 +678,16 @@
   margin: 15px 0;
 }
 
+.color-section:hover {
+
+  text-decoration-line: underline;
+}
+
+.shipping-section:hover {
+
+  text-decoration-line: underline;
+}
+
 .label-color {
 
   position: relative;
@@ -751,7 +772,7 @@
   text-align: center;
   padding: 7px 25px;
   min-width: 80px;
-  background: #F3D0DB;
+  background-color: #FFFFFF;
 }
 
 .label-amount:hover {
@@ -759,9 +780,9 @@
   background-color: #EDDEEB;
 }
 
-.label-amount:active {
+.form-amount:checked + .label-amount {
 
-  background-color: #FFFFFF;
+  background-color: #F3D0DB;
 }
 
 .button-form-amount {
@@ -794,7 +815,55 @@
 
 .shop-item {
 
+  position: relative;
+  width: 380px;
+  height: 497px;
   margin: 10px;
+}
+
+.shop-img {
+
+  width: 380px;
+  height: 385px;
+}
+
+.toys-shop-img {
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 207px;
+  height: 207px;
+  left: 87px;
+  top: 89px;
+  right: 86px;
+  bottom: 89px;
+  transform: translate(50% 50%);
+  background-color: #E5EAF8;
+  opacity: 0;
+}
+
+.toy-link:hover > .toys-shop-img {
+
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+.toy-link:active > .toys-shop-img {
+
+  opacity: 0.67;
+}
+
+
+.toys-shop-text {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #1E0606;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
 .shop-text {
@@ -821,6 +890,20 @@
   padding-top: 15px;
   padding-bottom: 25px;
   margin: 0;
+}
+
+.img-nav-link-color:hover {
+
+  cursor: pointer;
+  stroke: #C29974;
+  stroke-opacity: 1;
+}
+
+.img-nav-link-color:active {
+
+  cursor: none;
+  stroke: #C29974;
+  stroke-opacity: 0.5;
 }
 
 /* 4 страница blog */
@@ -859,7 +942,7 @@
 
 .blog-note {
 
-  font-family: 'Roboto', ;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -922,6 +1005,17 @@
   justify-content: space-between;
 }
 
+.img-nav-link:hover {
+
+  color: #C29974;
+}
+
+.img-nav-link:active {
+
+  color: #C29974;
+  opacity: 0.5;
+}
+
 .img-nav-number {
 
   display: flex;
@@ -940,6 +1034,17 @@
 .img-nav-item {
 
   display: flex;
+  color: #1E0606;
+}
+
+.img-nav-item:hover {
+
+  color: #C29974;
+}
+
+.img-nav-item:active {
+
+  opacity: 0.5;
 }
 
 /* 5 страница contact-us */
