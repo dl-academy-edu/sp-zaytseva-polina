@@ -395,10 +395,7 @@
 
 /* modal form */
 
-.modal-form_none {
 
-  display: none;
-}
 
 .modal-form {
 
@@ -416,6 +413,13 @@
   margin: auto;
   position: relative;
 }
+
+
+.modal-form_none {
+
+  display: none;
+}
+
 
 .contact-us-form {
 
