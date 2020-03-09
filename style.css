@@ -1,6 +1,7 @@
 /* slider */
 
 .main-slider {
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
 }
 
 .slide {
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -47,6 +49,7 @@
 }
 
 .slider-button {
+
   display: block;
   width: 31px;
   height: 3px;
@@ -54,11 +57,13 @@
   background-color: #D6CAC2;
 }
 
-.slider-button:hover {
+.slider-button:hover, .slider-button:focus {
+
   background-color: rgba(30, 6, 6, 0.6);
 }
 
 .slider-button__1 {
+
   background-color: rgba(30, 6, 6, 0.6);
 }
 
@@ -71,6 +76,7 @@
 
 
 .slide-title {
+
   display: block;
   width: 307px;
   min-height: 88px;
@@ -87,6 +93,7 @@
 }
 
 .slide-text {
+
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 0;
@@ -98,6 +105,7 @@
 }
 
 .slide-link {
+
   margin-top: 20px;
   margin-left: 133px;
 
@@ -110,6 +118,7 @@
 
 
 .discount-text {
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -144,7 +153,7 @@
   margin: 0 -10px;
 }
 
-.category-link:hover > .category-subtitle {
+.category-link:hover  .category-subtitle, .category-link:focus  .category-subtitle {
 
   text-decoration-line: underline;
 }
@@ -266,7 +275,7 @@
   background-color: rgba(112, 187, 220, 0.2);
 }
 
-.delivery-button:hover {
+.delivery-button:hover, .delivery-button:focus {
 
   cursor: pointer;
   background: rgba(112, 187, 220, 0.2);
@@ -395,8 +404,6 @@
 
 /* modal form */
 
-
-
 .modal-form {
 
   display: flex;
@@ -497,7 +504,7 @@
 
 }
 
-.form-input:hover {
+.form-input:hover, .form-input:focus {
 
   border: 2px solid rgba(0, 0, 0, 0.2);
 }
@@ -587,7 +594,7 @@
   color: #1E0606;
 }
 
-.categorys-link:hover {
+.categorys-link:hover, .categorys-link:focus {
 
   cursor: pointer;
   color: #1E0606;
@@ -641,7 +648,7 @@
   color: #1E0606;
 }
 
-.toys-link:hover {
+.toys-link:hover, .toys-link:focus {
 
   cursor: pointer;
   color: #1E0606;
@@ -682,12 +689,12 @@
   margin: 15px 0;
 }
 
-.color-section:hover {
+.color-section:hover, .color-section:focus {
 
   text-decoration-line: underline;
 }
 
-.shipping-section:hover {
+.shipping-section:hover, .shipping-section:focus {
 
   text-decoration-line: underline;
 }
@@ -779,7 +786,7 @@
   background-color: #FFFFFF;
 }
 
-.label-amount:hover {
+.label-amount:hover, .label-amount:focus {
 
   background-color: #EDDEEB;
 }
@@ -846,11 +853,11 @@
   transform: translate(50% 50%);
   background-color: #E5EAF8;
   opacity: 0;
+  transition: 0.5s;
 }
 
-.toy-link:hover > .toys-shop-img {
+.toy-link:hover .toys-shop-img, .toy-link:focus .toys-shop-img {
 
-  transition: 0.5s;
   opacity: 0.9;
 }
 
@@ -1123,14 +1130,14 @@
   height: 50px;
   border: 1px solid transparent;
   color: #E1E1E1;
-  background-color: #000000;
   margin-top: 20px;
+  background-color: #000000;
+  transition: 0.5s;
 }
 
 .button-form:hover {
 
   cursor: pointer;
-  transition: 0.5s;
   background-color: #C29974;
 }
 

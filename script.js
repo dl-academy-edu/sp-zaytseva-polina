@@ -15,9 +15,9 @@ buttonClose.addEventListener("click", function () {
     modalForm.classList.add("modal-form_none");
 });
 
-window.addEventListener("keydown" , function (event) {
-    if(event.code == "Escape");
+window.addEventListener("keydown", function (event) {
+    if(event.code == "Escape" && !modalForm.classList.contains("modal-form_none")) {
     modalForm.classList.add("modal-form_none");
-    console.log(event);
-});
-
+    button.focus();
+    }
+    });
