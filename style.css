@@ -903,7 +903,7 @@
   margin: 0;
 }
 
-.img-nav-link-color:hover {
+.img-nav-link-color:hover, .img-nav-link-color:focus {
 
   cursor: pointer;
   stroke: #C29974;
@@ -935,7 +935,7 @@
   padding-top: 50px;
 }
 
-.blog-link:hover .blog-heading, .blog-link:active .blog-heading {
+.blog-link:hover .blog-heading, .blog-link:active .blog-heading, .blog-link:focus .blog-heading {
 
   cursor: pointer;
   text-decoration: underline;
@@ -972,7 +972,7 @@
   color: #1E0606;
 }
 
-.blog-heading:hover {
+.blog-heading:hover, .blog-heading:focus {
 
   text-decoration-line: underline;
   color: #1E0606;
@@ -1016,7 +1016,7 @@
   justify-content: space-between;
 }
 
-.img-nav-link:hover {
+.img-nav-link:hover, .img-nav-link:focus {
 
   color: #C29974;
 }
@@ -1048,7 +1048,7 @@
   color: #1E0606;
 }
 
-.img-nav-item:hover {
+.img-nav-item:hover, .img-nav-item:focus {
 
   color: #C29974;
 }
@@ -1077,7 +1077,7 @@
   color: #1E0606;
 }
 
-.contact-us-link:hover {
+.contact-us-link:hover, .contact-us-link:focus {
 
   cursor: pointer;
   color: #1E0606;
@@ -1135,7 +1135,7 @@
   transition: 0.5s;
 }
 
-.button-form:hover {
+.button-form:hover, .button-form:focus {
 
   cursor: pointer;
   background-color: #C29974;
