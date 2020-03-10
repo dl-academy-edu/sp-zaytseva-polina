@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
@@ -67,44 +68,47 @@
             <fieldset class="form-section">
             <legend class="section-title">Color</legend>
               <div class="color-section">
-                <input class="form-color hidden" id="input-black" name="color" type="checkbox" value="black">
+                <input class="form-color opacity" id="input-black" name="color" type="checkbox" value="black">
                 <label class="label-color form-color-checkbox" for="input-black">Black</label>
               </div>
               <div class="color-section">
-                <input class="form-color hidden" id="input-blue" name="color" type="checkbox" value="blue">
+                <input class="form-color opacity" id="input-blue" name="color" type="checkbox" value="blue">
                 <label class="label-color form-color-checkbox" for="input-blue">Blue</label>
               </div>
               <div class="color-section">
-                <input class="form-color hidden" id="input-green" name="color" type="checkbox" value="green">
+                <input class="form-color opacity" id="input-green" name="color" type="checkbox" value="green">
                 <label class="label-color form-color-checkbox" for="input-green">Green</label>
               </div>
               <div class="color-section">
-                <input class="form-color hidden" id="input-white" name="color" type="checkbox" value="white">
+                <input class="form-color opacity" id="input-white" name="color" type="checkbox" value="white">
                 <label class="label-color form-color-checkbox" for="input-white">White</label>
               </div>
             </fieldset>
             <fieldset class="form-sections">
             <legend class="section-title">Delivery</legend>
               <div class="shipping-section">
-                <input class="form-shipping hidden" id="input-free" name="shipping" type="radio" value="free shipping">
+                <input class="form-shipping opacity" id="input-free" name="shipping" type="radio" value="free shipping">
                 <label class="label-shipping shipping-checkbox" for="input-free">Free shipping</label>
               </div>
               <div class="shipping-section">
-                <input class="form-shipping hidden" id="input-fast" name="shipping" type="radio" value="fast shipping" checked>
+                <input class="form-shipping opacity" id="input-fast" name="shipping" type="radio" value="fast shipping" checked>
                 <label class="label-shipping shipping-checkbox" for="input-fast">Fast shipping</label>
               </div>
             </fieldset>
             <fieldset class="form-section">
               <legend class="section-title">Amount</legend>
               <ul class="amount-section list-hidden-marker">
-                <li><input class="form-amount form-amount hidden" id="input1" name="amound" type="radio" value="free shipping" checked>
-                  <label class="label-amount" for="input1">0-5</label>
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount1" name="amount" type="radio" value="0-5" checked>
+                  <label class="label-amount" for="input-amount1">0-5</label>
                 </li>
-                <li><input class="form-amount hidden" id="input2" name="amound" type="radio" value="free shipping">
-                  <label class="label-amount" for="input2">10-20</label>
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount2" name="amount" type="radio" value="10-20">
+                  <label class="label-amount" for="input-amount2">10-20</label>
                 </li>
-                <li><input class="form-amount hidden" id="input3" name="amound" type="radio" value="free shipping">
-                  <label class="label-amount" for="input3">20-50</label>
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount3" name="amount" type="radio" value="20-50">
+                  <label class="label-amount" for="input-amount3">20-50</label>
                 </li>
               </ul>
             </fieldset>

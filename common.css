@@ -18,6 +18,10 @@ a {
   display: none;
 }
 
+.opacity {
+
+  opacity: 0;
+}
 
 .list-hidden-marker {
 

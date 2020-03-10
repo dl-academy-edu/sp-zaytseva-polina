@@ -689,20 +689,11 @@
   margin: 15px 0;
 }
 
-.color-section:hover, .color-section:focus {
-
-  text-decoration-line: underline;
-}
-
-.shipping-section:hover, .shipping-section:focus {
-
-  text-decoration-line: underline;
-}
-
 .label-color {
 
   position: relative;
   padding-left: 25px;
+  margin-left: -25px;
 }
 
 .label-color::before {
@@ -720,12 +711,18 @@
   border-radius: 3px;
 }
 
+.form-color-checkbox:hover, .form-color:focus + .form-color-checkbox {
+  
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .form-color:checked + .label-color:after {
 
   content: "";
   display: block;
   position: absolute;
-  left: 2;
+  left: 4;
   top: 50%;
   width: 15px;
   height: 15px;
@@ -738,6 +735,7 @@
 
   position: relative;
   padding-left: 30px;
+  margin-left: -25px;
 }
 
 .label-shipping::before {
@@ -769,35 +767,45 @@
   border-radius: 100%;
 }
 
+.label-shipping:hover, .form-shipping:focus + .label-shipping {
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .amount-section {
 
   display: flex;
-  justify-content: space-between;
   padding-left: 0;
   margin: 16px 0;
 }
 
 .label-amount {
 
-  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
   text-align: center;
-  padding: 7px 25px;
-  min-width: 80px;
+  padding: 6px 19px;
+  margin-top:-22px;
+  width: 80px;
   background-color: #FFFFFF;
 }
 
-.label-amount:hover, .label-amount:focus {
+.label-amount:hover, .form-amount:focus + .label-amount {
 
+  cursor: pointer;
   background-color: #EDDEEB;
 }
 
 .form-amount:checked + .label-amount {
 
+  
   background-color: #F3D0DB;
 }
 
 .button-form-amount {
 
+  cursor: pointer;
   display: block;
   margin-top: 35px;
 }
@@ -846,11 +854,9 @@
   align-items: center;
   width: 207px;
   height: 207px;
-  left: 87px;
-  top: 89px;
-  right: 86px;
-  bottom: 89px;
-  transform: translate(50% 50%);
+  left: 50%;
+  top: 50%;
+  transform: translateY(calc(-50% - 59px)) translateX(-50%);
   background-color: #E5EAF8;
   opacity: 0;
   transition: 0.5s;
