@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>DLK</title>
   </head>
 
@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container header-content">
         <a href="index.html" class="header-logo-link">
-          <img class="header-logo" src="/images/logo.svg" alt="logo">
+          <img class="header-logo" width="100" height="52" src="/images/logo.svg" alt="logo">
         </a>
         <nav class="header-menu-wrapper">
           <ul class="list-hidden-marker header-menu">
@@ -35,7 +35,7 @@
           <ul class="search-list list-hidden-marker">
             <li>
               <a class="search-link" href="#">
-                <img class="search-image" src="/images/search.svg" alt="search">
+                <img class="search-image" width="17.2" height="17.58" src="/images/search.svg" alt="search">
               </a>
             </li>
             <li>
@@ -50,19 +50,20 @@
         <section class="toys container">
           <h1 class="toys-title">Toy for kids</h1>
           <a class="toys-link" href="#">Home</a>
-          <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
+          <img class="toys-arrow" width="8" height="12" src="/images/vector3.svg" alt="vector3">
           <a class="toys-link" href="#">Catalog</a>
-          <img class="toys-arrow" src="/images/vector3.svg" alt="vector3">
+          <img class="toys-arrow" width="8" height="12" src="/images/vector3.svg" alt="vector3">
           <a class="toys-link" href="#">Toys</a>
         </section>
         <section class="toys-section">
+          <h1 class="hidden">Toys</h1>
           <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
             <fieldset class="form-section">
               <legend class="section-title">Cost</legend>
               <div class="cost-section">
-              <label class="label-cost" for="label-cost">0</label>
+              <label class="label-cost" for="input-cost">0</label>
               <input class="input-cost" name="input-cost" id="input-cost" step="10" type="range" min="0" max="35" value="10">
-              <label class="label-cost" for="label-cost">500</label>
+              <label class="label-cost" for="input-cost">500</label>
               </div>
             </fieldset>
             <fieldset class="form-section">
@@ -117,29 +118,30 @@
         </section>
 
         <section class="toys-shop container">
+          <h1 class="hidden">Shop</h1>
           <ul class="shop-list list-hidden-marker">
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p><p class="usd-text">$60.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p><p class="usd-text">$60.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/brass.jpg" alt="brass"><p class="shop-text">BRASS DECO FRAMES</p><p class="usd-text">$66.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/brass.jpg" alt="brass"><p class="shop-text">BRASS DECO FRAMES</p><p class="usd-text">$66.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/cibo.jpg" alt="cibo"><p class="shop-text">CIBO FULL APRON</p><p class="usd-text">$60.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/cibo.jpg" alt="cibo"><p class="shop-text">CIBO FULL APRON</p><p class="usd-text">$60.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/gatcha.jpg" alt="gatcha"><p class="shop-text">GATCHA GATCHA GUMBALL MACHINE</p><p class="usd-text">$56.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/gatcha.jpg" alt="gatcha"><p class="shop-text">GATCHA GATCHA GUMBALL MACHINE</p><p class="usd-text">$56.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/christmas.jpg" alt="christmas"><p class="shop-text">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="usd-text">$29.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/christmas.jpg" alt="christmas"><p class="shop-text">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="usd-text">$29.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
             <li class="shop-item"><a class="toy-link" href="#">
-              <img class="shop-img" src="/images/tangle.jpg" alt="tangle"><p class="shop-text">TANGLE SPINNING TEA LIGHT</p><p class="usd-text">$56.00 USD</p>
+              <img class="shop-img" width="380" height="385" src="/images/tangle.jpg" alt="tangle"><p class="shop-text">TANGLE SPINNING TEA LIGHT</p><p class="usd-text">$56.00 USD</p>
               <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
             </li>
           </ul>

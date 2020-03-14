@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>DLK</title>
   </head>
 
@@ -18,7 +18,7 @@
       <header class="header">
         <div class="container header-content">
           <a href="index.html" class="header-logo-link">
-            <img class="header-logo" src="images/logo.svg" alt="logo">
+            <img class="header-logo" width="100" height="52" src="images/logo.svg" alt="logo">
           </a>
           <nav class="header-menu-wrapper">
             <ul class="list-hidden-marker header-menu">
@@ -35,7 +35,7 @@
             <ul class="search-list list-hidden-marker">
               <li>
                 <a class="search-link" href="#">
-                  <img class="search-image" src="images/search.svg" alt="search">
+                  <img class="search-image" width="17.2" height="17.58" src="images/search.svg" alt="search">
                 </a>
               </li>
               <li>
@@ -90,36 +90,36 @@
         <h2 class="category-title">CATEGORY PRODUCTS</h2>
         <ul class="category-list list-hidden-marker">
           <li class="category-item"><a class="category-link" href="#">
-            <img class="category-img" src="/images/apparel.jpg" alt="APPAREL KIDS">
+            <img class="category-img" width="280" height="270" src="/images/apparel.jpg" alt="APPAREL KIDS">
             <h3 class="category-subtitle">APPAREL KIDS</h3></a>
           </li>
           <li class="category-item"><a class="category-link" href="#">
-            <img class="category-img" src="/images/shop.jpg" alt="HOLIDAY SHOP">
+            <img class="category-img" width="280" height="270" src="/images/shop.jpg" alt="HOLIDAY SHOP">
             <h3 class="category-subtitle">HOLIDAY SHOP</h3></a>
           </li>
           <li class="category-item"><a class="category-link" href="/pages/catalog/Toy-for-kids/index.html">
-            <img class="category-img" src="/images/toys.jpg" alt="TOYS">
+            <img class="category-img" width="280" height="270" src="/images/toys.jpg" alt="TOYS">
             <h3 class="category-subtitle">TOYS</h3></a>
           </li>
           <li class="category-item"><a class="category-link" href="#">
-            <img class="category-img" src="/images/accessories.jpg" alt="ACCESSORIES">
+            <img class="category-img" width="280" height="270" src="/images/accessories.jpg" alt="ACCESSORIES">
             <h3 class="category-subtitle">ACCESSORIES</h3></a>
           </li>
         </ul>
         <div class="category-box">
-          <button class="box-button"><img class="vector-img" src="images/vector1.svg" alt="vector1"></button>
-          <button class="box-button"><img class="vector-img" src="images/vector2.svg" alt="vector2"></button>
+          <button class="box-button"><img class="vector-img" width="37" height="37" src="images/vector1.svg" alt="vector1"></button>
+          <button class="box-button"><img class="vector-img" width="37" height="37" src="images/vector2.svg" alt="vector2"></button>
           <p class="category-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </div>
       </section>
       
 
       <section class="delivery container">
-        <img class="delivery-img" src="images/girl.png" alt="delivery">
+        <img class="delivery-img" width="480" height="559" src="images/girl.png" alt="delivery">
         <div class="delivery-content">
           <h2 class="delivery-title">Delivery</h2>
           <ul class="delivery-buttons-list list-hidden-marker">
-            <li class="delivery-button-item"><button class="delivery-button1">Delivery</button></li>
+            <li class="delivery-button-item"><button class="delivery-button delivery-button__default">Delivery</button></li>
             <li class="delivery-button-item"><button class="delivery-button">Guarantee</button></li>
             <li class="delivery-button-item"><button class="delivery-button">Credit</button></li>
           </ul>
@@ -134,10 +134,10 @@
       <section class="partners container">
         <h2 class="hidden">Partners</h2>
         <ul class="partners-list list-hidden-marker">
-          <li class="partner-item "><a class="partner-link" href="#"><img src="images/mail.png" alt="mail"></a></li>
-          <li class="partner-item "><a class="partner-link" href="#"><img src="images/apple.png" alt="apple"></a></li>
-          <li class="partner-item "><a class="partner-link" href="#"><img src="images/eltex.png" alt="eltex"></a></li>
-          <li class="partner-item "><a class="partner-link" href="#"><img src="images/owox.png" alt="owox"></a></li>
+          <li class="partner-item "><a class="partner-link" href="#"><img width="193" height="60" src="images/mail.png" alt="mail"></a></li>
+          <li class="partner-item "><a class="partner-link" href="#"><img width="179" height="61" src="images/apple.png" alt="apple"></a></li>
+          <li class="partner-item "><a class="partner-link" href="#"><img width="216" height="46" src="images/eltex.png" alt="eltex"></a></li>
+          <li class="partner-item "><a class="partner-link" href="#"><img width="211" height="40" src="images/owox.png" alt="owox"></a></li>
         </ul>
       </section>
 
@@ -153,7 +153,7 @@
           <h2 class="contacts-title">CONTACTS</h2>
           <p class="contact-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
             shocked that four years have flown by. It's simply magical.</p>
-          <img class="map-image" src="images/map.png" alt="map">
+          <img class="map-image" width="483" height="196" src="images/map.png" alt="map">
         </section>
       </div>
     </main>
@@ -237,16 +237,14 @@
           <label class="form-label" for="input-message">Message</label>
           <input class="form-input" name="message" id="input-message">
         </div>
-        <label class="form-label" for="input-accept">
-          <input class="form-input-checkbox opacity" id="input-accept" name="accept" type="checkbox" 
-          value="By clicking on the button, you consent to the processing of your personal data">
-          <span class="form-checkbox"></span>
-          By clicking on the button, you consent to the processing of your personal data
-        </label>
-        <button class="button-form button_black" type="submit">SUBMIT</button>
+        <div class="accept-section">
+          <input class="form-input-checkbox opacity" id="input-accept" name="accept" type="checkbox" value="accept">
+          <label class="form-label form-checkbox" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+        <button disabled class="button-form" type="submit">SUBMIT</button>
         <button class="button-closed button-closed_js" type="button"></button>
       </form>
     </div>
-    <script src="script.js"></script>
+    <script src="/js/compressed.js"></script>
   </body>
 </html>
