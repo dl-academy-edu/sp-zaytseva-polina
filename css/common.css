@@ -1,0 +1,337 @@
+* {
+  border: none;
+}
+
+body { 
+  
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+} 
+
+a { 
+
+  text-decoration: none; 
+} 
+
+.hidden {
+  
+  display: none;
+}
+
+.opacity {
+
+  opacity: 0;
+}
+
+.list-hidden-marker {
+
+  list-style-type: none;
+}
+
+.button_black {
+
+  display: inline-block;
+  padding: 9px 22px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.button_black:hover {
+
+  cursor: pointer;
+  background-color: #C29974;
+}
+
+.button_black:active {
+
+  background-color: #CFAF91;
+}
+
+/* header */
+
+.header {
+
+  margin-top: 50px;
+  margin-bottom: 56px;
+}
+
+.container {
+
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header-content {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-link {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-link:hover {
+
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.header-menu-wrapper {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+
+  display: flex;
+}
+
+.header-menu-item {
+
+  margin: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  box-sizing: content-box;
+}
+
+.header-menu-item:hover {
+
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.header-menu-link {
+
+  color: #1E0606;
+}
+
+.search-list {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-link {
+
+  margin-right: 24px;
+  display: flex;
+}
+
+.search-link:hover {
+
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.search-text {
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-text:hover {
+
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+
+  padding: 100px 0;
+  color: #FFFFFF;
+  background: #434343;
+  margin-top: 60px;
+}
+
+.footer-container {
+
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+.footer-content {
+
+  display: flex;
+}
+
+.footer-title {
+
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666666
+}
+
+.navigation-list {
+
+  padding: 0;
+}
+
+.information-list {
+
+  padding: 0;
+  margin: 28px 0;
+}
+
+.gray_text {
+
+  color: #AAAAAA;
+}
+
+.information-link:hover {
+
+  opacity: 0.5;
+}
+
+.navigation-link:hover {
+
+  opacity: 0.5;
+}
+
+.information-link {
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer-line {
+
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #666666;
+}
+
+.footer-star-block {
+
+  display: flex;
+}
+
+.button-star {
+
+  cursor: pointer;
+  margin-right: 3px;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.star-text {
+
+  margin-right: 25px;
+}
+
+.connect-form {
+
+  display: flex;
+  margin-top: 25px;
+}
+
+.connect-email {
+
+  width: 100%;
+  padding: 9px 15px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  color: #EBEBEB;
+  background-color: #666666;
+  transition: 0.3s;
+}
+
+.connect-email:hover {
+
+  cursor: pointer;
+  border-color: #FFFFFF;
+}
+
+.connect-email:focus {
+
+  cursor: none;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #1E0606;
+}
+
+.button-connect {
+
+  cursor: pointer;
+  width: 106px;
+  height: 40px;
+}
+
+.social-list {
+  
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+
+.social-item {
+
+  width: 30px;
+  height: 30px;
+  background-image: url(/images/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: #A2A2A2;
+}
+
+.social-item:hover {
+  
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.button-closed {
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url(/images/X.svg);
+  background-color: transparent;
+  top: 0;
+  right: -25px;
+  border: 0;
+}
+
+.button-closed:hover {
+
+  opacity: 0.5;
+}
+
+.button-closed:active {
+
+  opacity: 0.3;
+}

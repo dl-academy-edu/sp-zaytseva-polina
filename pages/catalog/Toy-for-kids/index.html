@@ -1,163 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Toy for kids</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DLK</title>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-      <a href="../../index.html">
-        <img class="header-logo" src="../../../../images/logo.svg" alt="Logo">
-      </a>
-      <nav class="site-nav">
-        <ul>
-          <li class="nav-item"><a href="#">Blog</a></li>
-          <li class="nav-item"><a href="pages/catalog/index.html">Catalog</a></li>
-          <li class="nav-item"><a href="#">About Us</a></li>
-        </ul>
-      </nav>
-      <a class="search-link" href="#">
-        <img class="search-image" src="../../../../images/search.svg" alt="search"></a>
-      <a href="../contact-us/index.html">Contact Us</a>
-  </header>
+      <div class="container header-content">
+        <a href="index.html" class="header-logo-link">
+          <img class="header-logo" width="100" height="52" src="/images/logo.svg" alt="logo">
+        </a>
+        <nav class="header-menu-wrapper">
+          <ul class="list-hidden-marker header-menu">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="pages/blog/index.html">BLOG</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="pages/catalog/index.html">CATALOG</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="pages/contact-us/index.html">ABOUT US</a>
+            </li>
+          </ul>
+          <ul class="search-list list-hidden-marker">
+            <li>
+              <a class="search-link" href="#">
+                <img class="search-image" src="/images/search.svg" alt="search">
+              </a>
+            </li>
+            <li>
+              <a class="search-text" href="/pages/contact-us/index.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    </header>
 
     <main>
-      <div class="toys">
-        <h1 class="toys-title">Toy for kids</h1>
-        <a href="#">Home</a>
-        <img class="toys-img" src="../../../../images/vector3.svg" alt="vector3">
-        <a href="#">Catalog</a>
-        <img class="toys-img" src="../../../../images/vector3.svg" alt="vector3">
-        <a href="#">Toys</a>
-      </div>
-    <form class="toys-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-        <fieldset>
-          <legend>Cost</legend>
-          <p>
-          <label for="input-cost">0</label>
-          <input name="cost" id="input-cost" type="range" min="0" max="35" value="10">
-          <label for="input-cost">500</label>
-          </p>
-        </fieldset>
-      <fieldset>
-        <legend>Color</legend>
-          <p>
-            <input id="input-black" name="black" type="checkbox" value="black">
-            <label for="input-black">Black</label>
-          </p>
-          <p>
-            <input id="input-blue" name="blue" type="checkbox" value="blue">
-            <label for="input-blue">Blue</label>
-          </p>
-          <p>
-            <input id="input-green" name="green" type="checkbox" value="green">
-            <label for="input-green">Green</label>
-          </p>
-          <p>
-            <input id="input-white" name="white" type="checkbox" value="white">
-            <label for="input-white">White</label>
-          </p>
-      </fieldset>
-      <fieldset>
-        <legend>Delivery</legend>
-          <p>
-            <input id="input-free" name="free" type="radio" value="free shipping">
-            <label for="input-free">Free shipping</label>
-          </p>
-          <p>
-            <input id="input-fast" name="fast" type="radio" value="fast shipping">
-            <label for="input-fast">Fast shipping</label>
-          </p>
-      </fieldset>
-      <fieldset>
-        <legend>Amount</legend>
-        <button type="submit">0-5</button>
-        <button type="submit">10-20</button>  
-        <button type="submit">20-50</button>
-      </fieldset>
-      <button type="submit">apply</button>
-    </form>
+        <section class="toys container">
+          <h1 class="toys-title">Toy for kids</h1>
+          <a class="toys-link" href="#">Home</a>
+          <img class="toys-arrow" width="8" height="12" src="/images/vector3.svg" alt="vector3">
+          <a class="toys-link" href="#">Catalog</a>
+          <img class="toys-arrow" width="8" height="12" src="/images/vector3.svg" alt="vector3">
+          <a class="toys-link" href="#">Toys</a>
+        </section>
+        <section class="toys-section">
+          <h1 class="hidden">Toys</h1>
+          <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <fieldset class="form-section">
+              <legend class="section-title">Cost</legend>
+              <div class="cost-section">
+              <label class="label-cost" for="input-cost">0</label>
+              <input class="input-cost" name="input-cost" id="input-cost" step="10" type="range" min="0" max="35" value="10">
+              <label class="label-cost" for="input-cost">500</label>
+              </div>
+            </fieldset>
+            <fieldset class="form-section">
+            <legend class="section-title">Color</legend>
+              <div class="color-section">
+                <input class="form-color opacity" id="input-black" name="color" type="checkbox" value="black">
+                <label class="label-color form-color-checkbox" for="input-black">Black</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color opacity" id="input-blue" name="color" type="checkbox" value="blue">
+                <label class="label-color form-color-checkbox" for="input-blue">Blue</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color opacity" id="input-green" name="color" type="checkbox" value="green">
+                <label class="label-color form-color-checkbox" for="input-green">Green</label>
+              </div>
+              <div class="color-section">
+                <input class="form-color opacity" id="input-white" name="color" type="checkbox" value="white">
+                <label class="label-color form-color-checkbox" for="input-white">White</label>
+              </div>
+            </fieldset>
+            <fieldset class="form-sections">
+            <legend class="section-title">Delivery</legend>
+              <div class="shipping-section">
+                <input class="form-shipping opacity" id="input-free" name="shipping" type="radio" value="free shipping">
+                <label class="label-shipping shipping-checkbox" for="input-free">Free shipping</label>
+              </div>
+              <div class="shipping-section">
+                <input class="form-shipping opacity" id="input-fast" name="shipping" type="radio" value="fast shipping" checked>
+                <label class="label-shipping shipping-checkbox" for="input-fast">Fast shipping</label>
+              </div>
+            </fieldset>
+            <fieldset class="form-section">
+              <legend class="section-title">Amount</legend>
+              <ul class="amount-section list-hidden-marker">
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount1" name="amount" type="radio" value="0-5" checked>
+                  <label class="label-amount" for="input-amount1">0-5</label>
+                </li>
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount2" name="amount" type="radio" value="10-20">
+                  <label class="label-amount" for="input-amount2">10-20</label>
+                </li>
+                <li class="amount-cells">
+                  <input class="form-amount opacity" id="input-amount3" name="amount" type="radio" value="20-50">
+                  <label class="label-amount" for="input-amount3">20-50</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button-form-amount button_black" type="submit">APLLY</button>
+          </form>
+        </section>
+
+        <section class="toys-shop container">
+          <h1 class="hidden">Shop</h1>
+          <ul class="shop-list list-hidden-marker">
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/sharky.jpg" alt="sharky"><p class="shop-text">SHARKY BEAN BAG CHAIR COVER</p><p class="usd-text">$60.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/brass.jpg" alt="brass"><p class="shop-text">BRASS DECO FRAMES</p><p class="usd-text">$66.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/cibo.jpg" alt="cibo"><p class="shop-text">CIBO FULL APRON</p><p class="usd-text">$60.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/gatcha.jpg" alt="gatcha"><p class="shop-text">GATCHA GATCHA GUMBALL MACHINE</p><p class="usd-text">$56.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/christmas.jpg" alt="christmas"><p class="shop-text">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="usd-text">$29.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+            <li class="shop-item"><a class="toy-link" href="#">
+              <img class="shop-img" width="380" height="385" src="/images/tangle.jpg" alt="tangle"><p class="shop-text">TANGLE SPINNING TEA LIGHT</p><p class="usd-text">$56.00 USD</p>
+              <div class="toys-shop-img"><p class="toys-shop-text">LEARN MORE</p></div></a>
+            </li>
+          </ul>
+        </section>
+        <div class="img-nav list-hidden-marker container">
+          <a class="img-nav-link">
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="img-nav-link-color" d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+            </svg>
+          </a>
+          <ul class=" img-nav-number list-hidden-marker">
+            <li class="img-nav-item"><a class="img-nav-item" href="#">1</a></li>
+            <li class="img-nav-item"><a class="img-nav-item" href="#">2</a></li>
+            <li class="img-nav-item"><a class="img-nav-item" href="#">3</a></li> 
+            <li class="img-nav-item"><a class="img-nav-item" href="#">4</a></li> 
+          </ul>
+          <a class="img-nav-link">
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="img-nav-link-color" d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+            </svg>
+          </a>
+        </div>
     </main>
 
-        <div class="toys-shop">
-          <ul class="shop-list">
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/sharky.png" alt="sharky"></a></li>
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/brass.png" alt="brass"></a></li>
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/cibo.png" alt="cibo"></a></li>
-          </ul>
-          <ul class="shop-list">
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/gatcha.png" alt="gatcha"></a></li>
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/christmas.png" alt="christmas"></a></li>
-            <li class="shop-item"><a href="../../index.html"><img class="shop-img" src="../../../../images/spinning.png" alt="spinning"></a></li>
-          </ul>
-        </div>
-      <div>
-        <div class="toys-list">
-          <img class="toys-img" src="../../../../images/Vector4.svg" alt="vector4">
-          <ul>
-            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/1.svg" alt="1"></a></li>
-            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/2.svg" alt="2"></a></li>
-            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/3.svg" alt="3"></a></li> 
-            <li class="toys-item"><a href="#"><img class="toys-img" src="../../../../images/4.svg" alt="4"></a></li> 
-          </ul>
-          <img class="toys-img" src="../../../../images/Vector5.svg" alt="vector5">
-        </div>
-      </div>
-
-      <footer class="footer">
-        <section class="footer-navigation">
-          <h4 class="footer-title">Navigation</h4>
-          <nav class="footer-navigation">
-            <ul class="navigation-list list-hidden-marker">
-              <li class="navigation-item"><a href="#">About Us</a></li>
-              <li class="navigation-item"><a href="#">Blog</a></li>
-              <li class="navigation-item"><a href="#">Design Services</a></li>
-              <li class="navigation-item"><a href="#">Featured On</a></li>
-              <li class="navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-              <li class="navigation-item"><a href="#">Shop By Designer</a></li>
-            </ul>
-          </nav>
-          <h4 class="footer-title">Company Rating</h4>
-          <div class="footer-userpic">
-            <ul class="footer-userpic list-hidden-marker">
-              <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
-              <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
-              <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
-              <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
-              <li><img class="userpic-img" src="images/Star.svg" alt="star"></li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer-navigation">
-          <h4 class="footer-title">Customer Information</h4>
-            <nav class="footer-navigation">
-              <ul class="information-list list-hidden-marker">
-                <li class="information-item"><a href="#">Contact Us</a></li>
-                <li class="information-item"><a href="#">Sale Exclusions</a></li>
-                <li class="information-item"><a href="#">Shipping & Returns</a></li>
-                <li class="information-item"><a href="#">Terms & Conditions</a></li>
-                <li class="information-item"><a href="#">Privacy Policy</a></li>
-                <li class="information-item"><a href="#">Search</a></li>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <section class="footer-container">
+            <h4 class="footer-title gray_text">Navigation</h4>
+            <nav class="footer-navigation">              
+              <ul class="navigation-list list-hidden-marker">
+                <li class="navigation-item"><a class="information-link" href="#">About Us</a></li>
+                <li class="navigation-item"><a class="information-link" href="#">Blog</a></li>
+                <li class="navigation-item"><a class="information-link" href="#">Design Services</a></li>
+                <li class="navigation-item"><a class="information-link" href="#">Featured On</a></li>
+                <li class="navigation-item"><a class="information-link" href="#">2018 Holiday Catalog</a></li>
+                <li class="navigation-item"><a class="information-link" href="#">Shop By Designer</a></li>
               </ul>
             </nav>
-          <h4 class="footer-title">Copyright © 2018 Dlk • Design Life Kids</h4>
-        </section>
-        <section class="footer-connect">
-          <h4 class="footer-title">Connect</h4>
+          </section>
+          <section class="footer-container">
+            <h4 class="footer-title gray_text">Customer Information</h4>
+              <nav class="footer-navigation">
+                <ul class="information-list list-hidden-marker">
+                  <li class="information-item"><a class="information-link" href="#">Contact Us</a></li>
+                  <li class="information-item"><a class="information-link" href="#">Sale Exclusions</a></li>
+                  <li class="information-item"><a class="information-link" href="#">Shipping & Returns</a></li>
+                  <li class="information-item"><a class="information-link" href="#">Terms & Conditions</a></li>
+                  <li class="information-item"><a class="information-link" href="#">Privacy Policy</a></li>
+                  <li class="information-item"><a class="information-link" href="#">Search</a></li>
+                </ul>
+              </nav>
+          </section>
+          <section class="footer-container">
+            <h4 class="footer-title gray_text">Connect</h4>
             <form class="connect-form" name="user" action="index.html" method="POST">
-              <input type="email" autocomplete="on" placeholder="Email">
-              <button type="submit">Join</button>
+              <input class="connect-email"  type="email" autocomplete="on" placeholder="Email">
+              <button class="button-connect button_black" type="submit">JOIN</button>
             </form>
             <ul class="social-list list-hidden-marker">
-              <li class="social-item"><a href="#">Facebook</a></li>
-              <li class="social-item"><a href="#">Twitter</a></li>
-              <li class="social-item"><a href="#">Pinterest</a></li>
-              <li class="social-item"><a href="#">Instagram</a></li>
+              <li class="social-item"><a class="social-link" href="#"><img src="/images/facebook.svg" alt="facebook"></a></li>
+              <li class="social-item"><a class="social-link" href="#"><img src="/images/twitter.svg" alt="twitter"></a></li>
+              <li class="social-item"><a class="social-link" href="#"><img src="/images/pinterest.svg" alt="pinterest"></a></li>
+              <li class="social-item"><a class="social-link" href="#"><img src="/images/instagram.svg" alt="instagram"></a></li>
             </ul>
-          <h4 class="foter-title">Web Design — Direct Line Development</h4>
-        </section>
-      </footer>
-</body>
-</html>
+          </section>
+        </div>
+        <div class="footer-line">
+          <div class="footer-star-block footer-container">
+            <p class="star-text">Company Rating</p>
+            <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
+            <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
+            <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
+            <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
+            <button class="button-star"><img class="stars" src="/images/star.svg" alt="star"></button>
+          </div>
+          <p class="footer-title-star footer-container">Copyright © 2018 Dlk • Design Life Kids</p>
+          <a class="footer-link gray_text footer-container" href="#">Web Design — Direct Line Development</a>
+        </div>
+      </div>      
+    </footer>
+
+  </body>
+  </html>
